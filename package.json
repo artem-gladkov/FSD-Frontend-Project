@@ -1,7 +1,7 @@
 {
-  "name": "webpack-my-build",
+  "name": "fsd-frontend-project",
   "version": "1.0.0",
-  "description": "My webpack build",
+  "description": "FSD-FRONTEND-PROJECT",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --open --config ./build/webpack.dev.conf.js",
@@ -35,5 +35,8 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^5.1.2"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^4.4.1"
   }
 }

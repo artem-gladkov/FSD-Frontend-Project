@@ -1,35 +1,37 @@
-// Font
+// Fonts
 $mainFont                : 'Montserrat', Helvetica, Arial, sans-serif;
+$mainFontSize            : 14px;
+$mainFontWeight          : normal;
+$mainFontColor           : rgba(31, 32, 65, 0.75);
+$mainLineHeight          : 24px;
+
+$labelFont               : 'Montserrat', Helvetica, Arial, sans-serif;
+$labelFontSize           : 12px;
+$labelFontWeight         : bold;
+$labelFontColor          : rgba(31, 32, 65, 1);
+$labelLineHeight         : 15px;
+
+$titleFont               : 'Quicksand', Helvetica, Arial, sans-serif;
+$titleFontSize           : 24px;
+$titleFontWeight         : bold;
+$titleFontColor          : rgba(31, 32, 65, 1);
+$titleLineHeight         : 30px;
+
+$subTitleFont            : 'Quicksand', Helvetica, Arial, sans-serif;
+$subTitleFontSize        : 19px;
+$subTitleFontWeight      : bold;
+$subTitleFontColor       : rgba(31, 32, 65, 1);
+$subTitleLineHeight      : 24px;
+
 
 // Size
-$mainFontColor           : #101010;
-$mainFontSize            : 18px;
-$mainFontWeight          : 400;
-$mainLineHeight          : 1.4;
-
 $desktopWidth            : 1280px;
 $smDesktopWidth          : 980px;
 $tableWidth              : 768px;
 $phoneWidth              : 480px;
 $smPhoneWidth            : 320px;
 
-// Main color
-$default-color           : #ffffff;
-$primary-color           : #444ce0;
-$success-color           : #26de81;
-$danger-color            : #fc5c65;
-$warning-color           : #fed330;
-$light-color             : #999999;
-$purple-color            : #8854d0;
-
-// Neutral Color
-$neutral-primary         : #303133;
-$neutral-regular         : #606266;
-$neutral-secondary       : #909399;
-$neutral-placeholder     : #C0C4CC;
-
-// Border Color
-$border-base             : #DCDFE6;
-$border-light            : #E4E7ED;
-$border-lighter          : #EBEEF5;
-$border-lightex          : #F2F6FC;
+// Main colors
+$default-color           : rgba(31, 32, 65, 1);
+$primary-color           : rgba(188, 156, 255, 1); 
+$success-color           : rgba(111, 207, 151, 1); 

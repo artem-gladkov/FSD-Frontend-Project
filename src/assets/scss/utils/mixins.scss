@@ -1,0 +1,3 @@
+@mixin defaulColor ($transparency){
+    color: rgba(31, 32, 65, $transparency)
+}
