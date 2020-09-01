@@ -57,18 +57,18 @@ module.exports = {
           }
         ]
       }, {
-      //FONTS
+      //IMG
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]'
         }
       }, {
-      //IMG
+      //FONTS
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'file-loader',
         options: {
-          name: '[name].[ext]'
+          name: 'assets/fonts/[name].[ext]'
         }
       }
     ]

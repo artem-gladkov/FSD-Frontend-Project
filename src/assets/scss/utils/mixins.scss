@@ -1,3 +1,31 @@
-@mixin defaulColor ($transparency){
-    color: rgba(31, 32, 65, $transparency)
+@mixin mainFont {
+  font-family: $mainFont ;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  color: $mainFontColor;
+  line-height: $mainLineHeight;
+}
+
+@mixin labelFont {
+  font-family: $labelFont ;
+  font-size: $labelFontSize;
+  font-weight: $labelFontWeight;
+  color: $labelFontColor;
+  line-height: $labelLineHeight;
+}
+
+@mixin titleFont {
+  font-family: $titleFont ;
+  font-size: $titleFontSize;
+  font-weight: $titleFontWeight;
+  color: $titleFontColor;
+  line-height: $titleLineHeight;
+}
+
+@mixin subTitleFont {
+  font-family: $subTitleFont ;
+  font-size: $subTitleFontSize;
+  font-weight: $subTitleFontWeight;
+  color: $subTitleFontColor;
+  line-height: $subTitleLineHeight;
 }

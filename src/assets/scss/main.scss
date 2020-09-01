@@ -7,3 +7,12 @@
 html, body{
     font-family: $mainFont;
 }
+
+.container{
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+@import '../../blocks/desktop/base-input/base-input.scss';
+
