@@ -5,12 +5,12 @@
 @import "utils/fonts";
 
 html, body{
-    font-family: $mainFont;
+    @include mainFont
 }
 
 .container{
     max-width: 1200px;
-    padding: 0 20px;
+    padding: 140px 20px 0;
     margin: 0 auto;
 }
 

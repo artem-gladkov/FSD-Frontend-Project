@@ -1,3 +1,5 @@
+include ../assets/pug/blocks.pug
+
 <!DOCTYPE html>
 html(lang="zxx")
   head
@@ -6,4 +8,7 @@ html(lang="zxx")
     title Form Elements
   body
     .container
-       include ../blocks/desktop/base-input/base-input.pug
+      +input('text', 'Text Field', 'default', 'Email')
+      +input('text', 'Text Field', 'Hover / Focus', 'Text')
+      +inputDropdown('dropdown', 'dropdown', 'default', 'Сколько гостей')
+      +input('text', 'masked text field', 'default', 'ДД.ММ.ГГГГ')

@@ -1,6 +1,12 @@
-.base-input
-  .base-input__wrap
-    span(class="base-input__left-label") Text field
-    span(class="base-input__right-label") Default
-  input(type="text" class="base-input__item" placeholder="Email")
-  
+include __dropdown/__dropdown.pug
+
+mixin input(type, leftLabel, rightLabel, placeholder)
+  .base-input
+    .base-input-wrap
+      span(class="base-input__left-label")=leftLabel
+      span(class="base-input__right-label")=rightLabel
+    input(type=type class="base-input__item" placeholder=placeholder)
+
+
+
+

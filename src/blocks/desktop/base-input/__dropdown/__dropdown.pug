@@ -1,0 +1,9 @@
+
+mixin inputDropdown(type, leftLabel, rightLabel, placeholder)
+  .base-input
+    .base-input-wrap
+      span(class="base-input__left-label")=leftLabel
+      span(class="base-input__right-label")=rightLabel
+    div(class="base-input__item base-input_dropdown")=placeholder
+      div.base-input__arrow
+    
