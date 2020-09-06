@@ -3,6 +3,7 @@
 @import "utils/vars";
 @import "utils/mixins";
 @import "utils/fonts";
+@import "utils/blocks";
 
 html, body{
     @include mainFont
@@ -13,6 +14,21 @@ html, body{
     padding: 140px 20px 0;
     margin: 0 auto;
 }
+.wrap-inputs{
+    max-width: 320px;
+    .main-inputs{
+        .base-input:nth-child(-n+3){
+            margin: 0 0 22px 0;
+        }
+    }
+    .base-input:nth-child(n+3){
+        margin: 0 0 40px 0;
+    }
+    .mini-inputs{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 40px 0;
+    }
+}
 
-@import '../../blocks/desktop/base-input/base-input.scss';
 

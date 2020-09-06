@@ -1,6 +1,5 @@
 .base-input{
   max-width: 320px;
-  margin: 0 0 21px;
   &-wrap{
     display: flex;
     justify-content: space-between;
@@ -39,21 +38,5 @@
       line-height: 14px;
       letter-spacing: normal;
     }
-  }
-
-  &_dropdown{
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
-  &__arrow{
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    border-top: 2px solid $default-color50;
-    border-right: 2px solid $default-color50;
-    transform: rotate(135deg);
-    right: 17.5px;
-    top: 15px;
   }
 }

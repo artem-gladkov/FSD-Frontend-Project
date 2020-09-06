@@ -1,0 +1,12 @@
+.arrow_type_dropdown{
+  cursor: pointer;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid $default-color50;
+  border-right: 2px solid $default-color50;
+  transform: rotate(135deg);
+  right: 17.5px;
+  top: 15px;
+}
+  

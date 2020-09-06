@@ -1,0 +1,21 @@
+.arrow_type_subscription{
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border-top: 2px solid $primary-color;
+  border-right: 2px solid $primary-color;
+  transform: rotate(45deg);
+  right: 16px;
+  bottom: 16px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  div{
+    position: absolute;
+    height: 2px;
+    width: 15px;
+    background-color: $primary-color;
+    transform: rotate(-45deg);
+  }
+}

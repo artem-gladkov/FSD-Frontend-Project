@@ -1,0 +1,8 @@
+mixin input_type_dropdown(classes, leftLabel, value)
+  .base-input.base-input_type_dropdown(class=classes)
+    .base-input-wrap
+      span(class="base-input__left-label")=leftLabel
+      span(class="base-input__right-label")=rightLabel
+    div(class="base-input__item")=value
+      div.arrow_type_dropdown
+    
