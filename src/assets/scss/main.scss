@@ -13,9 +13,14 @@ html, body{
     max-width: 1200px;
     padding: 140px 20px 0;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.wrap-inputs{
+
+.inputs-wrap{
     max-width: 320px;
+    width: 100%;
     .main-inputs{
         .base-input:nth-child(-n+3){
             margin: 0 0 22px 0;
@@ -31,4 +36,25 @@ html, body{
     }
 }
 
+.switches-wrap{
+    max-width: 260px;
+    width: 100%;
+}
+
+.buttons-wrap{
+    max-width: 260px;
+    width: 100%;
+}
+
+.title{
+    @include labelFont;
+    text-transform: uppercase;
+    margin: 0 0 17px 0;
+}
+
+.checkbox-buttons{
+    .checkbox:nth-child(n){
+        margin: 0 0 3px 0;
+    }
+}
 
