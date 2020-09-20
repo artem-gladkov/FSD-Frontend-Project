@@ -54,6 +54,7 @@
 }
 
 .toggle-buttons{
+  margin: 0 0 43px 0;
   .title{
       letter-spacing: -0.3px;
       margin: 0 0 13px 0;
@@ -63,5 +64,14 @@
   }
   .toggle:nth-last-child(){
     margin: 0;
+  }
+}
+
+.like-buttons{
+  .like{
+    display: inline-block;
+    &:nth-child(2){
+      margin: 0 10px 0 0;
+    }
   }
 }
