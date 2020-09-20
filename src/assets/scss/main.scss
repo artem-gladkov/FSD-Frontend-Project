@@ -53,8 +53,21 @@ html, body{
 }
 
 .checkbox-buttons{
+    margin: 0 0 40px 0;
     .checkbox:nth-child(n){
         margin: 0 0 3px 0;
+    }
+}
+
+.radio-buttons {
+    .title{
+        margin: 0 0 13px 0;
+    }
+    label{
+        display: inline-block;
+        &:nth-child(3){
+            margin: 0 0 0 21px;
+        }
     }
 }
 
