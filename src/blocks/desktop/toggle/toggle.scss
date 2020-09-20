@@ -1,0 +1,23 @@
+.toggle{
+  display: flex;
+  align-items: center;
+  &__box{
+    width: 40px;
+    height: 20px;
+    border: 1px solid $default-color25;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__circle{
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: $default-color25;
+    margin: 0 0 0 4px;
+  }
+  &__text{
+    margin: 0 0 0 10px;
+  }
+}

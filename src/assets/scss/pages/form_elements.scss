@@ -1,0 +1,67 @@
+
+.inputs-wrap{
+  max-width: 320px;
+  width: 100%;
+  .main-inputs{
+      .base-input:nth-child(-n+3){
+          margin: 0 0 22px 0;
+      }
+  }
+  .base-input:nth-child(n+3){
+      margin: 0 0 40px 0;
+  }
+  .mini-inputs{
+      display: flex;
+      justify-content: space-between;
+      margin: 0 0 40px 0;
+  }
+}
+
+.switches-wrap{
+  max-width: 260px;
+  width: 100%;
+}
+
+.buttons-wrap{
+  max-width: 260px;
+  width: 100%;
+}
+
+.title{
+  @include labelFont;
+  text-transform: uppercase;
+  margin: 0 0 17px 0;
+}
+
+.checkbox-buttons{
+  margin: 0 0 40px 0;
+  .checkbox:nth-child(n){
+      margin: 0 0 3px 0;
+  }
+}
+
+.radio-buttons {
+  margin: 0 0 34px 0;
+  .title{
+      margin: 0 0 13px 0;
+  }
+  label{
+      display: inline-block;
+      &:nth-child(3){
+          margin: 0 0 0 21px;
+      }
+  }
+}
+
+.toggle-buttons{
+  .title{
+      letter-spacing: -0.3px;
+      margin: 0 0 13px 0;
+  }
+  .toggle:nth-child(n){
+    margin: 0 0 10px 0;
+  }
+  .toggle:nth-last-child(){
+    margin: 0;
+  }
+}
