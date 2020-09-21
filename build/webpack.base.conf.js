@@ -80,13 +80,14 @@ module.exports = {
     new CopyWebpackPlugin ({
       patterns: [
         {from: `${PATHS.src}/assets/img`, to: `${PATHS.assets}img`},
-        // {from: `${PATHS.src}/assets/fonts`, to: `${PATHS.assets}fonts`},
-        {from: `${PATHS.src}/static`, to: ``},
+        {from: `${PATHS.src}/static`, to: ''},
       ]
     }),
     ...PAGES.map(page => new HtmlWebpackPlugin({
       template: `${PAGES_DIR}/${page}`,
       filename: `./${page.replace(/\.pug/,'.html')}`
     }))
+
+    
   ]
 } 

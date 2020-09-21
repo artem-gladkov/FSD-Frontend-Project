@@ -1,0 +1,12 @@
+.rate{
+  max-width: 120px;
+  display: flex;
+  justify-content: space-between;
+  &__star{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

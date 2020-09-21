@@ -68,10 +68,20 @@
 }
 
 .like-buttons{
+  margin: 0 0 32px 0;
   .like{
     display: inline-block;
     &:nth-child(2){
       margin: 0 10px 0 0;
     }
+  }
+}
+
+.rate-buttons{
+  .rate{
+    display: inline-flex;
+  }
+  .rate:nth-child(2){
+    margin: 0 20px 0 0;
   }
 }
