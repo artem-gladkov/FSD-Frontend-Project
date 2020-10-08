@@ -5,12 +5,6 @@
     border: 1px solid rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     padding: 40px 30px 30px 30px;
-    .title{
-      @include titleFont;
-      letter-spacing: 1.2px;
-      text-transform: none;
-      margin: 0 0 20px 0;
-    }
     &__date{
       display: flex;
       justify-content: space-between;
