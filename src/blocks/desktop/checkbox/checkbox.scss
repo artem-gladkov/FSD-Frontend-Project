@@ -1,27 +1,29 @@
 .checkbox{
-  max-width: 222px;
-  white-space: nowrap;
-  vertical-align: top;  
-  display: inline-block;
-  & > input {
+  margin: 0 0 10px 0;
+  &__label{
+    max-width: 266px;
+    white-space: nowrap;
+    vertical-align: top;  
+    display: inline-block;
+  }
+  &__input {
     position: absolute;
     z-index: -1;
     opacity: 0;
-    &:not(:disabled):not(:checked)+p:hover::before{
+    &:not(:disabled):not(:checked)+.checkbox__text:hover::before{
       border-color: $primary-color;
     }
-    &:checked+p::before{
+    &:checked+.checkbox__text::before{
       border-color: $primary-color;
     }
-    &:checked+p::after{
+    &:checked+.checkbox__text::after{
       display: block;
       opacity: 1;
       border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%) 25%;
       transition: all .3s ease;
     }
   }
-
-  & > p {
+  &__text {
     display: inline-flex;
     align-items: flex-start;
     user-select: none;
@@ -29,6 +31,7 @@
     position: relative;
     line-height: 18px;
     color: $default-color50;
+    max-width: 222px;
     &::before {
       content: '';
       display: inline-block;

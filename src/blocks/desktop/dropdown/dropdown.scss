@@ -1,0 +1,104 @@
+.dropdown{
+  margin: 50px 0;
+  max-width: 320px;
+  width: 100%;
+  &__label{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    &-left{
+      font-weight: bold;
+      color: $default-color;
+    }
+    &-right{
+      color: $default-color50;
+    }
+  }
+  &__btn{
+    border: 1px solid $default-color25;
+    width: 100%;
+    height: 45px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: $default-color75;
+    display: flex;
+    align-items: center;
+    padding: 13px 15px 13px 15px;
+    position: relative;
+    cursor: pointer;
+    &::before{
+      content: '';
+      display: block;
+      position: absolute;
+      width: 9px;
+      height: 9px;
+      border-right: 2px solid $default-color50;
+      border-bottom: 2px solid $default-color50;
+      transform: rotate(45deg);
+      right: 17px;
+      top: 15px;
+      cursor: pointer;
+    }
+  }
+  &__menu{
+    width: 100%;
+    padding: 7px 7px 0px 15px;
+    border: 1px solid $default-color25;
+    border-top: none;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    &-btn{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $primary-color;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 13px 0 13px 0;
+      &-left,
+      &-right{
+        cursor: pointer;
+      }
+    }
+  }
+  &__item{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 7px 0;
+    &-text{
+      font-weight: bold;
+      color: $default-color;
+      text-transform: uppercase;
+      font-size: 12px;
+      user-select: none;
+    }
+    &-count{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 92px;
+    }
+    &-btn{
+      width: 30px;
+      height: 30px;
+      border: 1px solid $default-color50;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      color: $default-color50;
+      cursor: pointer;
+      &:hover{
+        opacity: .5;
+      }
+    }
+    &-num{
+      font-weight: bold;
+    }
+  }
+}

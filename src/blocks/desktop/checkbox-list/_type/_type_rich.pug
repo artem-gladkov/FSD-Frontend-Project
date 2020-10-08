@@ -1,0 +1,8 @@
+mixin checkbox-list_type_rich(title, obj)
+  .checkbox-list.checkbox-list_type_rich 
+    p.checkbox-list__title=title
+    each description,value in obj
+      +checkbox_type_rich(value, description)
+
+    
+      

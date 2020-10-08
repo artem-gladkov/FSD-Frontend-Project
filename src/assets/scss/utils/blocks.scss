@@ -4,10 +4,26 @@
 @import '../../../blocks/desktop/base-input/_size/_size_mini.scss';
 @import '../../../blocks/desktop/base-input/_size/_size_medium.scss';
 @import '../../../blocks/desktop/arrow/_type/_type_dropdown.scss';
-@import '../../../blocks/desktop/arrow/_type/_type_subscription.scss';
+@import '../../../blocks/desktop/arrow/_type/_type_right.scss';
+@import '../../../blocks/desktop/checkbox-list/checkbox-list.scss';
 @import '../../../blocks/desktop/checkbox/checkbox.scss';
+@import '../../../blocks/desktop/checkbox/_type/type_rich.scss';
 @import '../../../blocks/desktop/radio/radio.scss';
 @import '../../../blocks/desktop/toggle/toggle.scss';
 @import '../../../blocks/desktop/like/like.scss';
 @import '../../../blocks/desktop/rate/rate.scss';
 @import '../../../blocks/desktop/range/range.scss';
+@import '../../../blocks/desktop/button/button.scss';
+@import '../../../blocks/desktop/button/_type/type_transparent.scss';
+@import '../../../blocks/desktop/button/_type/type_light.scss';
+@import '../../../blocks/desktop/button/_size/size_big.scss';
+@import '../../../blocks/desktop/button/_with-arrow/_with-arrow.scss';
+@import '../../../blocks/desktop/pagination/pagination.scss';
+@import '../../../blocks/desktop/dropdown/dropdown.scss';
+@import '../../../blocks/desktop/dropdown/_size/_size_medium.scss';
+@import '../../../blocks/desktop/dropdown/_size/_size_small.scss';
+@import '../../../blocks/desktop/checkbox-expandable/checkbox-expandable.scss';
+@import '../../../blocks/desktop/bullet-list/bullet-list.scss';
+@import '../../../blocks/desktop/advantage/advantage.scss';
+@import '../../../blocks/desktop/comment/comment.scss';
+

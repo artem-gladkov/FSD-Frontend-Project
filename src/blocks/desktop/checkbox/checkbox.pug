@@ -1,8 +1,5 @@
-mixin checkbox(text)
-  label.checkbox
-      input(type="checkbox")
-      p=text
-     
-    
-      
-      
+mixin checkbox(item)
+  .checkbox
+    label.checkbox__label
+      input.checkbox__input(type="checkbox")
+      p.checkbox__text=item

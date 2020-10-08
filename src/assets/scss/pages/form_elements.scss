@@ -1,3 +1,12 @@
+.block{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  &:nth-child(3){
+    padding: 0 0 100px 0;
+  }
+}
+
 
 .inputs-wrap{
   max-width: 320px;
@@ -15,16 +24,6 @@
       justify-content: space-between;
       margin: 0 0 40px 0;
   }
-}
-
-.switches-wrap{
-  max-width: 260px;
-  width: 100%;
-}
-
-.buttons-wrap{
-  max-width: 320px;
-  width: 100%;
 }
 
 .title{
@@ -84,4 +83,33 @@
   .rate:nth-child(2){
     margin: 0 20px 0 0;
   }
+}
+
+.range-slider{
+  margin: 0 0 43px 0;
+}
+
+.buttons{
+  .title{
+    width: 100%;
+  }
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 320px;
+  .button:nth-child(n+1){
+    margin: 0 0 30px;
+  }
+}
+
+.dropdown-wrap{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.medium-dropdown{
+  width: 100%;
+  max-width: 267px;
 }

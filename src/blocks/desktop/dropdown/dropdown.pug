@@ -1,0 +1,18 @@
+mixin dropdown(leftLabel, rightLabel, arr, value, classes)
+  .dropdown(class=classes)
+    .dropdown__label
+      p.dropdown__label-left=leftLabel
+      p.dropdown__label-right=rightLabel
+    .dropdown__btn=value
+    .dropdown__menu 
+      each item in arr
+        .dropdown__item
+          .dropdown__item-text=item
+          .dropdown__item-count
+            .dropdown__item-btn-reduce.dropdown__item-btn -
+            .dropdown__item-num 0
+            .dropdown__item-btn-add.dropdown__item-btn +
+      .dropdown__menu-btn
+        p.dropdown__menu-btn-left Очистить
+        p.dropdown__menu-btn-right Применить
+        

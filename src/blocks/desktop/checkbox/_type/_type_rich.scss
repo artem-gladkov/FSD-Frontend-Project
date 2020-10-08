@@ -1,0 +1,15 @@
+.checkbox_type_rich{
+  
+  .checkbox__text{
+    font-weight: bold;
+    color: $default-color75;
+  }
+  .checkbox__description{
+    font-size: 12px;
+    line-height: 14px;
+    color: $default-color50;
+    padding: 0 0 0 30px;
+    width: 100%;
+    white-space: normal;
+  }
+}

@@ -1,0 +1,20 @@
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 45px;
+  border-radius: 22px;
+  text-transform: uppercase;
+  color: white;
+  background: linear-gradient(180deg, rgba(188, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+  &__text{
+    z-index: 3;
+  }
+  &:hover{
+    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
+  }
+}

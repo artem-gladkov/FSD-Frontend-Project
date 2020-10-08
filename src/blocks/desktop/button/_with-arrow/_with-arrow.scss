@@ -1,0 +1,10 @@
+.button_with-arrow{
+  position: relative;
+  .arrow_type_right{
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    div{
+      background-color: #fff;
+    }
+  }
+}

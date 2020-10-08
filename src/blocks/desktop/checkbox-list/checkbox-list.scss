@@ -1,0 +1,11 @@
+.checkbox-list{
+  max-width: 266px;
+  width: 100%;
+  &__title{
+    font-size: 12px;
+    font-weight: bold;
+    color: $default-color;
+    text-transform: uppercase;
+    margin: 0 0 17px 0;
+  }
+}
