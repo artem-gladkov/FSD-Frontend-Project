@@ -26,12 +26,6 @@
   }
 }
 
-.title{
-  @include labelFont;
-  text-transform: uppercase;
-  margin: 0 0 17px 0;
-}
-
 .checkbox-buttons{
   margin: 0 0 40px 0;
   .checkbox:nth-child(n){

@@ -1,0 +1,8 @@
+mixin card-selection()
+  .card-selection
+    h2.title.title_size_big Найдём номера под ваши пожелания
+    .card-selection__date
+      +input_type_dropdown('прибытие', '19.08.2019', 'base-input_size_mini')
+      +input_type_dropdown('выезд', '19.08.2019', 'base-input_size_mini')
+    +input_type_dropdown('гости', 'Сколько гостей', 'card-selection__guests')
+    +button_with-arrow('Подобрать номер', 'button_size_big button_with-arrow card-selection__button')
