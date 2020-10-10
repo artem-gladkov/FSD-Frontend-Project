@@ -1,9 +1,9 @@
 .button_with-arrow{
   position: relative;
-  .arrow_type_right{
+  .arrow{
     border-top: 2px solid white;
     border-right: 2px solid white;
-    div{
+    &::before{
       background-color: #fff;
     }
   }

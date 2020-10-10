@@ -3,8 +3,8 @@
 @import '../../../blocks/desktop/base-input/_type/_type_subscription.scss';
 @import '../../../blocks/desktop/base-input/_size/_size_mini.scss';
 @import '../../../blocks/desktop/base-input/_size/_size_medium.scss';
-@import '../../../blocks/desktop/arrow/_type/_type_dropdown.scss';
-@import '../../../blocks/desktop/arrow/_type/_type_right.scss';
+@import '../../../blocks/desktop/tick/tick.scss';
+@import '../../../blocks/desktop/arrow/arrow.scss';
 @import '../../../blocks/desktop/checkbox-list/checkbox-list.scss';
 @import '../../../blocks/desktop/checkbox/checkbox.scss';
 @import '../../../blocks/desktop/checkbox/_type/type_rich.scss';
@@ -33,4 +33,5 @@
 @import '../../../blocks/desktop/card/card.scss';
 @import '../../../blocks/desktop/card-booking/card-booking.scss';
 @import '../../../blocks/desktop/card-login/card-login.scss';
+@import '../../../blocks/desktop/calendar/calendar.scss';
 

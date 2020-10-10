@@ -1,0 +1,60 @@
+mixin calendar()
+  .calendar
+    .calendar__header
+      .arrow.calendar__arrow-back
+      p.calendar__heading Август 2019
+      .arrow.calendar__arrow-next
+    table.calendar__table
+      thead.calendar__weekdays
+        tr.calendar__weekdays-row
+          th Пн
+          th Вт
+          th Ср
+          th Чт
+          th Пт
+          th Сб
+          th Вс
+      tbody.calendar__days
+        tr
+          td.calendar__other-month 29
+          td.calendar__other-month 30 
+          td.calendar__other-month 31
+          td 1
+          td 2
+          td 3
+          td 4
+        tr
+          td 5
+          td 6
+          td 7
+          td#calendar__today 8
+          td 9 
+          td 10
+          td 11
+        tr
+          td 12
+          td 13
+          td 14
+          td 15
+          td 16
+          td 17
+          td 18
+        tr
+          td#calendar__date-from 19
+          td.calendar__interval 20
+          td.calendar__interval 21
+          td.calendar__interval 22
+          td#calendar__date-to 23
+          td 24
+          td 25
+        tr
+          td 26
+          td 27 
+          td 28
+          td 29 
+          td 30
+          td 31 
+          td.calendar__other-month 1
+    .calendar__buttons
+      +button('Очистить', 'button_type_light')
+      +button('Применить', 'button_type_light')
