@@ -1,0 +1,102 @@
+.card-booking{
+  padding: 40px 30px 30px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 20px 0;
+  }
+  &__heading{
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -1px;
+    &-num{
+      font-size: 24px;
+      line-height: 30px;
+    }
+    &-text{
+      @include labelFont;
+      color: $primary-color;
+      text-transform: uppercase;
+    }
+  }
+  &__room-price{
+    font-weight: bold;
+    color: $default-color50;
+    font-size: 14px;
+    line-height: 18px;
+    &-text{
+      font-size: 12px;
+      font-weight: normal;
+    }
+  }
+  &__date{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+  }
+  &__guests{
+    margin: 0 0 20px 0;
+  }
+  &__cart{
+    margin: 0 0 30px 0;
+    &-item{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 0 10px 0;
+      &:last-child{
+        margin: 0;
+      }
+      &-text{
+        position: relative;
+        max-width: 240px;
+        display: flex;
+        line-height: 18px;
+        justify-content: space-between;
+      }
+      &-sticker{
+        display: inline-block;
+        min-width: 20px;
+        height: 20px;
+        border: 1px solid $default-color25;
+        border-radius: 100%;
+        position: relative;
+        margin: 0 0 0 5px;
+        &::before{
+          content: '';
+          display: block;
+          width: 2px;
+          height: 6px;
+          background-color: $default-color25;
+          position: absolute;
+          left: 8px;
+          bottom: 4px;
+        }
+        &::after{
+          content: '';
+          display: block;
+          width: 2px;
+          height: 2px;
+          border-radius: 100%;
+          background-color: $default-color25;
+          position: absolute;
+          left: 8px;
+          top: 4px;
+        }
+      }
+    }
+  }
+  &__total-cost{
+    display: flex;
+    justify-content: space-between;
+    @include titleFont;
+    font-size: 19px;
+    line-height: 24px;
+    margin: 0 0 20px 0;
+  }
+}
