@@ -1,0 +1,9 @@
+mixin card-login()
+  .card.card-login
+    .heading.card-login_heading Войти
+    +input('', '', 'Email', 'card-login__email')
+    +input('', '', 'Пароль', 'card-login__password')
+    +button_with-arrow('Войти', 'button_size_big card-login__button-login')
+    .card-login__bottom
+      a.card-login__link Уже есть аккаунт на Toxin
+      +button('Создать', 'button_type_transparent card-login__button-create')

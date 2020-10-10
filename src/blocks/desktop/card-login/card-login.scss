@@ -1,0 +1,13 @@
+.card-login{
+  &__password{
+    margin: 0 0 20px 0;
+  }
+  &__button-login{
+    margin:  0 0 30px 0;
+  }
+  &__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
