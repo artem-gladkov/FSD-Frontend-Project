@@ -1,2 +1,58 @@
 .footer{
+  padding: 100px 140px;
+  background-color: white;
+  box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+  &__body{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__center{
+    display: flex;
+    justify-content: space-between;
+    max-width: 550px;
+    width: 100%;
+  }
+  &__logo{
+    margin: 0 0 17px 0;
+  }
+  &__info{
+    max-width: 260px;
+  }
+  &__nav{
+    max-width: min-content;
+    white-space: nowrap;
+    width: 100%;
+  }
+  &__about{
+    max-width: min-content;
+    white-space: nowrap;
+    width: 100%;
+  }
+  &__support{
+    max-width: min-content;
+    white-space: nowrap;
+    width: 100%;
+  }
+  &__title{
+    color: $default-color;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14.63px;
+    text-transform: uppercase;
+    margin: 5px 0 20px 0;
+
+  }
+  &__list-item{
+    margin: 0 0 13px 0;
+    &:last-child{
+      margin: 0;
+    }
+  }
+  &__list-link{
+    color: $default-color50;
+    line-height: 17px;
+  }
+  &__subscribe{
+    max-width: 260px;
+  }
 }
