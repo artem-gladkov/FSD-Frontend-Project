@@ -1,6 +1,54 @@
 .header{
-    background-color: silver;
+    background: white;
+    box-shadow: 0px 10px 20px $default-color5;
     width: 100%;
-    width: 200px;
-    text-align: center;
+    &__body{
+        padding: 18px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-basis: content;
+    }
+    &__nav{
+        margin: 0 20px 0 0;
+        &-list{
+            display: flex;
+            justify-content: space-between;
+            min-width: min-content;
+            line-height: 17px;
+            color: $default-color50;
+        }
+        &-item{
+            white-space: nowrap;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 20px 0 0;
+            cursor: pointer;
+            &:hover{
+                color: $default-color75;
+            }
+            &:last-child{
+                margin: 0;
+            }
+            .tick{
+               position: unset;
+               width: 23px;
+               height: 21px;
+            }
+        }
+        &-active-link{
+            font-weight: bold;
+            line-height: 17px;
+            color: $default-color75;
+        }
+    }
+    &__button-login{
+        margin: 0 20px 0 0;
+    }
 }

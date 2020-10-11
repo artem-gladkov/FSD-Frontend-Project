@@ -6,6 +6,7 @@
 @import "utils/blocks";
 @import "pages/form_elements";
 @import "pages/cards";
+@import "pages/headers_footers";
 
 html, body{
     @include mainFont
@@ -13,7 +14,6 @@ html, body{
 
 .container{
     max-width: 1200px;
-    padding: 140px 20px 0;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;

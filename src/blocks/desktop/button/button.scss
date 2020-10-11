@@ -2,14 +2,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
-  height: 45px;
+  min-width: min-content;
+  min-height: min-content;
+  padding: 10px 20px;
   border-radius: 22px;
   text-transform: uppercase;
   color: white;
   background: linear-gradient(180deg, rgba(188, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
   font-weight: bold;
   font-size: 12px;
+  line-height: 14.63px;
   cursor: pointer;
   &__text{
     z-index: 3;

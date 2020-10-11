@@ -1,0 +1,21 @@
+mixin header()
+  header.header
+    .container.header__body
+      +logo()
+      .header__inner
+        nav.header__nav
+          ul.header__nav-list
+            li.header__nav-item.header__nav-active-link
+              a.header__nav-link О нас
+            li.header__nav-item
+              a.header__nav-link Услуги
+              +tick
+            li.header__nav-item
+              a.header__nav-link Вакансии
+            li.header__nav-item
+              a.header__nav-link Новости
+            li.header__nav-item
+              a.header__nav-link Соглашения
+              +tick
+        +button('Войти', "button_type_transparent header__button-login")
+        +button('Зарегистрироваться', "button_size_big header__button-reg")
