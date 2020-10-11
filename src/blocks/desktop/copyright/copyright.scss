@@ -1,0 +1,29 @@
+.copyright{
+  background: white;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  width: 100%;
+  &__body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 20px;
+  }
+  &__text{
+    line-height: 17px;
+  }
+  &__social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 112px;
+  }
+  &__twitter,
+  &__facebook,
+  &__inst{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
