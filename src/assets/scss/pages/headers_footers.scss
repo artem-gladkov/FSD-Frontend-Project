@@ -1,3 +1,10 @@
-.container{
-  
+body{
+  background-color: #E5E5E5;
+}
+
+.header{
+  margin: 0 0 40px 0;
+  &:first-child{
+    margin: 140px 0 40px 0;
+  }
 }

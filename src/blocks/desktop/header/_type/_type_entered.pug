@@ -1,0 +1,21 @@
+mixin header_type_entered()
+  header.header.header_type_entered
+    .container.header__body
+      +logo()
+      .header__inner
+        nav.header__nav
+          ul.header__nav-list
+            li.header__nav-item.header__nav-active-link
+              a.header__nav-link О нас
+            li.header__nav-item
+              a.header__nav-link Услуги
+              +tick
+            li.header__nav-item
+              a.header__nav-link Вакансии
+            li.header__nav-item
+              a.header__nav-link Новости
+            li.header__nav-item
+              a.header__nav-link Соглашения
+              +tick
+        .header__separator
+        a.header__account Юлий Цезацрь

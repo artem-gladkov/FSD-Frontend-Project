@@ -1,0 +1,12 @@
+.header__separator{
+  width: 1px;
+  height: 30px;
+  background-color: rgba(31, 32, 65, 0.1);
+  margin: 0 20px 0 0;
+}
+
+.header__account{
+  color: $default-color50;
+  line-height: 17px;
+  letter-spacing: -0.8px;
+}
