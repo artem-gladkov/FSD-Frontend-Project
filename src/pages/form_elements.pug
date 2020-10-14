@@ -13,12 +13,12 @@ html(lang="zxx")
           .main-inputs
             +input('Text Field', 'default', 'Email')
             +input('Text Field', 'Hover / Focus', 'Text')
-            +input_type_dropdown('dropdown', 'Сколько гостей')
+            +dropdown('Dropdown', '', ['взрослые','дети', 'младенцы'], 'Сколько гостей', 'dropdown_size_big')
             +input('masked text field', 'default', 'ДД.ММ.ГГГГ')
           .mini-inputs
-            +input_type_dropdown('date dropdown', 'ДД.ММ.ГГГГ', 'input_size_mini')
-            +input_type_dropdown('date dropdown', '19.08.2019', 'input_size_mini')
-          +input_type_dropdown('filter date dropdown', '19 авг - 23 авг', 'ДД.ММ.ГГГГ', 'input_size_medium')
+            +input_type_dropdown('date dropdown', '', 'ДД.ММ.ГГГГ', 'input_size_mini')
+            +input_type_dropdown('date dropdown', '', '19.08.2019', 'input_size_mini')
+          +input_type_dropdown('filter date dropdown', '', '19 авг - 23 авг', 'ДД.ММ.ГГГГ', 'input_size_medium')
           +input_type_subscription('subscription text field', 'Email', 'input_size_medium')
         .switches-wrap
           .checkbox-buttons
@@ -56,10 +56,10 @@ html(lang="zxx")
             +pagination
       .block
         .medium-dropdown
-          +dropdown('Dropdown', 'default', ['спальни','крвоати', 'ванные комнаты'], '', 'dropdown_size_medium')
-          +dropdown('Dropdown', 'expanded', ['спальни','крвоати', 'ванные комнаты'], '', 'dropdown_size_medium')
-        +dropdown('Dropdown', '', ['взрослые','дети', 'младенцы'], 'Сколько гостей', 'dropdown_size_big')
-        +dropdown('Dropdown', '', ['взрослые','дети', 'младенцы'], '', 'dropdown_size_big')
+          +dropdown('Dropdown', 'default', ['спальни','крвоати', 'ванные комнаты'], '', 'dropdown_size_medium dropdown_content_amenities')
+          +dropdown('Dropdown', 'expanded', ['спальни','крвоати', 'ванные комнаты'], '', 'dropdown_size_medium dropdown_content_amenities')
+        +dropdown('Dropdown', '', ['взрослые','дети', 'младенцы'], 'Сколько гостей', 'dropdown_size_big dropdown_content_guests')
+        +dropdown('Dropdown', '', ['взрослые','дети', 'младенцы'], '', 'dropdown_size_big dropdown_content_guests')
       .block
         +checkbox-expandable('expandable checkbox list', ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь'])
         +checkbox-list_type_rich('rich Checkbox Buttons', {'Широкий коридор':'Ширина коридоров в номере не менее 91 см.',

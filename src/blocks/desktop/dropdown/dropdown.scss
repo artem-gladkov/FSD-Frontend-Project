@@ -2,6 +2,7 @@
   margin: 50px 0;
   max-width: 320px;
   width: 100%;
+  user-select: none;
   &__label{
     display: flex;
     width: 100%;
@@ -21,8 +22,7 @@
     border: 1px solid $default-color25;
     width: 100%;
     height: 45px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+    border-radius: 4px;
     color: $default-color75;
     display: flex;
     align-items: center;
@@ -42,9 +42,25 @@
       top: 15px;
       cursor: pointer;
     }
+    &.show{
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+    & + .dropdown__menu{
+      display: none;
+      opacity: 0;
+    }
+    &.show + .dropdown__menu{
+      display: block;
+      opacity: 1;
+    }
   }
   &__menu{
+    position: absolute;
+    z-index: 1;
+    max-width: 320px;
     width: 100%;
+    background-color: white;
     padding: 7px 7px 0px 15px;
     border: 1px solid $default-color25;
     border-top: none;
@@ -59,8 +75,8 @@
       font-weight: bold;
       text-transform: uppercase;
       margin: 13px 0 13px 0;
-      &-left,
-      &-right{
+      &-clear,
+      &-apply{
         cursor: pointer;
       }
     }

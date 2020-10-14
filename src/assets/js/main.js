@@ -1,2 +1,2 @@
-import '../../blocks/desktop/dropdown/dropdown.js'
+import './blocks.js'
 

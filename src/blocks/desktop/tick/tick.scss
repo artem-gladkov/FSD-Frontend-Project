@@ -4,14 +4,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  left: 0;
+  top: 0;
   &__item{
     width: 8px;
     height: 8px;
     border-top: 2px solid $default-color50;
     border-right: 2px solid $default-color50;
     transform: rotate(135deg);
-    right: 17.5px;
-    top: 15px;
   }
 }
 

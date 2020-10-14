@@ -3,5 +3,11 @@
     position: relative;
     display: flex;
     align-items: center;
+    & > .tick{
+      left: unset;
+      right: 17.5px;
+      top: 0;
+      bottom: 0;
+    }
   }
 }
