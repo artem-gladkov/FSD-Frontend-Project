@@ -1,8 +1,8 @@
-@import '../../../blocks/desktop/base-input/base-input.scss';
-@import '../../../blocks/desktop/base-input/_type/_type_dropdown.scss';
-@import '../../../blocks/desktop/base-input/_type/_type_subscription.scss';
-@import '../../../blocks/desktop/base-input/_size/_size_mini.scss';
-@import '../../../blocks/desktop/base-input/_size/_size_medium.scss';
+@import '../../../blocks/desktop/input/input.scss';
+@import '../../../blocks/desktop/input/_type/_type_dropdown.scss';
+@import '../../../blocks/desktop/input/_type/_type_subscription.scss';
+@import '../../../blocks/desktop/input/_size/_size_mini.scss';
+@import '../../../blocks/desktop/input/_size/_size_medium.scss';
 @import '../../../blocks/desktop/tick/tick.scss';
 @import '../../../blocks/desktop/arrow/arrow.scss';
 @import '../../../blocks/desktop/checkbox-list/checkbox-list.scss';
@@ -40,4 +40,5 @@
 @import '../../../blocks/desktop/header/_type/type_entered.scss';
 @import '../../../blocks/desktop/footer/footer.scss';
 @import '../../../blocks/desktop/copyright/copyright.scss';
+@import '../../../blocks/desktop/copyright/_size/_size_tablet.scss';
 

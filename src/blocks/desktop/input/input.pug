@@ -1,0 +1,11 @@
+mixin input(leftLabel, rightLabel, placeholder, classes)
+  .input(class=classes)
+    .input-wrap
+      span(class="input__left-label")=leftLabel
+      span(class="input__right-label")=rightLabel
+    input(type='text' class="input__item" placeholder=placeholder)
+
+
+
+
+
