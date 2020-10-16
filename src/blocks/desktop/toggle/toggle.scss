@@ -1,21 +1,30 @@
 .toggle{
   display: flex;
   align-items: center;
+  user-select: none;
+  cursor: pointer;
   &__box{
     width: 40px;
     height: 20px;
     border: 1px solid $default-color25;
     border-radius: 10px;
+    padding: 0 4px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    &.active{
+      border: 1px solid $primary-color;
+      justify-content: flex-end;
+    }
+    &.active > .toggle__circle{
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    }
   }
   &__circle{
     width: 12px;
     height: 12px;
     border-radius: 100%;
     background-color: $default-color25;
-    margin: 0 0 0 4px;
   }
   &__text{
     margin: 0 0 0 10px;

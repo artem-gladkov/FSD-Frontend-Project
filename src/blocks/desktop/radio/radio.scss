@@ -1,5 +1,7 @@
 .radio{
   max-width: 222px;
+  cursor: pointer;
+  user-select: none;
   & > input{
     position: absolute;
     z-index: -1;
