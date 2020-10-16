@@ -1,0 +1,7 @@
+mixin expandable-checkbox(title, arr)
+ .expandable-checkbox
+    h6.expandable-checkbox__title=title
+      +tick
+    .expandable-checkbox__checklist
+      each item in arr
+        +checkbox(item)

@@ -4,4 +4,5 @@ import '../../blocks/desktop/dropdown/_content/_content_amenities.js'
 import '../../blocks/desktop/toggle/toggle.js'
 import '../../blocks/desktop/like/like.js'
 import '../../blocks/desktop/rate/rate.js'
+import '../../blocks/desktop/expandable-checkbox/expandable-checkbox.js'
 

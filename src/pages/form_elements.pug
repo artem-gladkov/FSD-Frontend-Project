@@ -61,7 +61,9 @@ html(lang="zxx")
         +dropdown('Dropdown', '', ['взрослые','дети', 'младенцы'], 'Сколько гостей', 'dropdown_size_big dropdown_content_guests')
         +dropdown('Dropdown', '', ['взрослые','дети', 'младенцы'], '', 'dropdown_size_big dropdown_content_guests')
       .block
-        +checkbox-expandable('expandable checkbox list', ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь'])
+        .expandable-checkboxes
+          +expandable-checkbox('expandable checkbox list', ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь'])
+          +expandable-checkbox('expandable checkbox list', ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь'])
         +checkbox-list_type_rich('rich Checkbox Buttons', {'Широкий коридор':'Ширина коридоров в номере не менее 91 см.',
         'Помощник для инвалидов':'На 1 этаже вас встретит специалист  и проводит до номера.'})
         +bullet-list('bullet list', ['Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00'])
