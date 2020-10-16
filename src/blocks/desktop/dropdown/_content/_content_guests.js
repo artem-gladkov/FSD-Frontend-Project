@@ -1,6 +1,4 @@
-let dropdownsGuests = $('.dropdown_content_guests')
-
-    
+let dropdownsGuests = $('.dropdown.dropdown_content_guests')
 
 $.each(dropdownsGuests, function(index, dropdown){
   let btnShow = $(dropdown).find('.dropdown__btn'),

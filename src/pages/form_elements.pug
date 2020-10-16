@@ -13,7 +13,7 @@ html(lang="zxx")
           .main-inputs
             +input('Text Field', 'default', 'Email')
             +input('Text Field', 'Hover / Focus', 'Text')
-            +dropdown('Dropdown', '', ['взрослые','дети', 'младенцы'], 'Сколько гостей', 'dropdown_size_big')
+            +dropdown('Dropdown', '', ['взрослые','дети', 'младенцы'], 'Сколько гостей', 'dropdown_size_big dropdown_content_guests')
             +input('masked text field', 'default', 'ДД.ММ.ГГГГ')
           .mini-inputs
             +input_type_dropdown('date dropdown', '', 'ДД.ММ.ГГГГ', 'input_size_mini')
@@ -56,8 +56,8 @@ html(lang="zxx")
             +pagination
       .block
         .medium-dropdown
-          +dropdown('Dropdown', 'default', ['спальни','крвоати', 'ванные комнаты'], '', 'dropdown_size_medium dropdown_content_amenities')
-          +dropdown('Dropdown', 'expanded', ['спальни','крвоати', 'ванные комнаты'], '', 'dropdown_size_medium dropdown_content_amenities')
+          +dropdown('Dropdown', 'default', ['спальни','кровати', 'ванные комнаты'], '', 'dropdown_size_medium dropdown_content_amenities')
+          +dropdown('Dropdown', 'expanded', ['спальни','кровати', 'ванные комнаты'], '', 'dropdown_size_medium dropdown_content_amenities')
         +dropdown('Dropdown', '', ['взрослые','дети', 'младенцы'], 'Сколько гостей', 'dropdown_size_big dropdown_content_guests')
         +dropdown('Dropdown', '', ['взрослые','дети', 'младенцы'], '', 'dropdown_size_big dropdown_content_guests')
       .block

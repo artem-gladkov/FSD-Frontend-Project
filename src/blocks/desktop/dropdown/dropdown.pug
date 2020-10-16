@@ -5,7 +5,7 @@ mixin dropdown(leftLabel, rightLabel, arr, placeholder, classes)
       p.dropdown__label-right=rightLabel
     .dropdown__btn
       span.dropdown__btn-value=placeholder
-    .dropdown__menu
+    .dropdown__menu(class=classes)
       each item in arr
         .dropdown__item
           .dropdown__item-text=item
