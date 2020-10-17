@@ -1,0 +1,28 @@
+.datepicker{
+	max-width: 320px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  &__field{
+    max-width: 150px;
+    width: 100%;
+    & .tick{
+      right: 15px;
+      bottom: 6px;
+    }
+  }
+  &__label{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $default-color;
+    font-size: 12px;
+    position: relative;
+  }
+	&__input{
+		width: 100%;
+		padding: 12px 30px 12px 15px;
+		border: 1px solid $default-color25;
+		border-radius: 4px;
+	}
+}
