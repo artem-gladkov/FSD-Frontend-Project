@@ -1,5 +1,6 @@
 .input{
   max-width: 320px;
+  min-width: 150px;
   &-wrap{
     display: flex;
     justify-content: space-between;
@@ -10,13 +11,13 @@
 
   &__left-label{
     @include labelFont;
-    line-height: 14px;
+    line-height: 14.63px;
   }
   &__right-label{
     @include mainFont;
     font-size: 12px;
     color: $default-color50;
-    line-height: 7px;
+    line-height: 14.63px;
   }
 
   &__item{

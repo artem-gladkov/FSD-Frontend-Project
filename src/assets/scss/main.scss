@@ -3,19 +3,9 @@
 @import "utils/vars";
 @import "utils/mixins";
 @import "utils/fonts";
+@import "utils/common";
 @import "utils/blocks";
 @import "pages/form_elements";
 @import "pages/cards";
 @import "pages/headers_footers";
 
-html, body{
-    @include mainFont
-}
-
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    // display: flex;
-    // justify-content: space-between;
-    // flex-wrap: wrap;
-}

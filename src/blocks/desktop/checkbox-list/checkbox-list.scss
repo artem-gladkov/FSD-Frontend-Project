@@ -3,9 +3,13 @@
   width: 100%;
   &__title{
     font-size: 12px;
+    line-height: 14.63px;
     font-weight: bold;
     color: $default-color;
     text-transform: uppercase;
     margin: 0 0 17px 0;
+  }
+  .checkbox{
+    margin: 0 0 3px 0;
   }
 }

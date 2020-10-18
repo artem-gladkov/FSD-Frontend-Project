@@ -1,8 +1,9 @@
 .button_type_light{
   color: $primary-color;
   background: none;
-  width: auto;
-  height: auto;
+  width: unset;
+  height: unset;
+  padding: 0;
   &:hover{
     color: $default-color50;
     background: none;

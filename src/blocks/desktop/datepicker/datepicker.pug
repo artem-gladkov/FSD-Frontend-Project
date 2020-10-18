@@ -1,10 +1,7 @@
-mixin datepicker(leftLabel, rightLabel)
+mixin datepicker(label, value)
   .datepicker
-    .datepicker__field.datepicker__from
-      label.datepicker__label(for="datepicker__from")=leftLabel
-        input(type="text" class="datepicker__input datepicker__from-input" name="datepicker__from")
+    .datepicker__field
+      label.datepicker__label=label
+        input(type="text" class="datepicker__input" placeholder="ДД.MM.ГГГГ" value=value)
         +tick()
-    .datepicker__field.datepicker__to 
-      label.datepicker__label(for="datepicker__to")=rightLabel
-        input(type="text" class=" datepicker__input datepicker__to-input" name="datepicker__to")
-        +tick()
+    

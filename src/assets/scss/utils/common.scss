@@ -1,0 +1,29 @@
+html, body{
+  @include mainFont
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.column320{
+  max-width: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.column640{
+  max-width: 640px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}

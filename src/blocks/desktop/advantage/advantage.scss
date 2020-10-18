@@ -1,12 +1,12 @@
 .advantage{
   display: flex;
-  max-width: 280px;
+  min-width: 280px;
   width: 100%;
   height: min-content;
   border-bottom: 1px solid rgba(31, 32, 65, 0.1);
-  padding: 23px 0 17px 0;
+  padding: 20px 0 20px 0;
   &:first-child{
-    padding: 0 0 17px 0;
+    padding: 0 0 20px 0;
   }
   &__text{
     padding: 0 0 0 10px;

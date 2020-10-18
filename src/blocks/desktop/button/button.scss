@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: min-content;
-  min-height: min-content;
+  width: 99px;
+  height: 44px;
   padding: 10px 20px;
   border-radius: 22px;
   text-transform: uppercase;
@@ -12,6 +12,7 @@
   font-weight: bold;
   font-size: 12px;
   line-height: 14.63px;
+  white-space: nowrap;
   cursor: pointer;
   &__text{
     z-index: 3;

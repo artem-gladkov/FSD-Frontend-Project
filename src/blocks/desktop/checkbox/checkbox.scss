@@ -1,5 +1,7 @@
 .checkbox{
-  margin: 0 0 10px 0;
+  &:last-child{
+    margin: 0;
+  }
   &__label{
     max-width: 266px;
     white-space: nowrap;

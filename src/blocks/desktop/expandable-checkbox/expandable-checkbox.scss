@@ -9,16 +9,13 @@
     font-size: 12px;
     width: 100%;
     color: $default-color;
-    margin: 0 0 17px 0;
     position: relative;
     user-select: none;
     cursor: pointer;
     & > .tick{
       right: 18px;
       top: 5px;
-
     }
-
   }
   &.show > &__checklist{
     display: block;
@@ -30,5 +27,11 @@
   }
   &__checklist{
     display: none;
+    background-color: white;
+    z-index: 1;
+    margin: 13px 0 0 0;
+    .checkbox{
+      margin: 0 0 3px 0;
+    }
   }
 }
