@@ -1,3 +1,10 @@
-mixin button(text, classes) 
-  .button(class=classes)
-    p.button__text=text
+mixin button(options={}) 
+  - const {text = '', classes = '', arrow = false} = options
+  if (arrow)
+    .button.button_with-arrow(class=classes)
+      p.button__text=text
+      .arrow
+  else
+    .button(class=classes)
+      p.button__text=text
+

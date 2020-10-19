@@ -1,4 +1,10 @@
 .card-login{
+  &__heading{
+    line-height: 29px;
+  }
+  &__email{
+    margin: 0 0 5px 0;
+  }
   &__password{
     margin: 0 0 20px 0;
   }

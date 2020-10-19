@@ -1,8 +1,11 @@
-.column{
-  display: flex;
-  flex-direction: column;
-  max-width: 380px;
-  width: 100%;
+.cards{
+  padding: 130px 0 0 0;
+  .column380{
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+    width: 100%;
+  }
   .card-selection{
     margin: 0 0 40px 0; 
   }

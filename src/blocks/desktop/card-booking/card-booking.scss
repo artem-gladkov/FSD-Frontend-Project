@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 0 20px 0;
+    margin: 0 0 15px 0;
   }
   &__heading{
     margin: 0;
@@ -18,6 +18,8 @@
       @include labelFont;
       color: $primary-color;
       text-transform: uppercase;
+      line-height: 14.63px;
+      letter-spacing: 1.2px;
     }
   }
   &__room-price{
@@ -25,32 +27,32 @@
     color: $default-color50;
     font-size: 14px;
     line-height: 18px;
+    margin: 8px 0 0 0;
     &-text{
       font-size: 12px;
       font-weight: normal;
     }
   }
   &__date{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 0 20px 0;
+    margin: 0 0 17px 0;
   }
   &__guests{
     margin: 0 0 20px 0;
   }
   &__cart{
-    margin: 0 0 30px 0;
+    margin: 0 0 29px 0;
     &-item{
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      margin: 0 0 10px 0;
+      align-items: flex-start;
+      margin: 0 0 15px 0;
       &:last-child{
         margin: 0;
       }
       &-text{
         position: relative;
         max-width: 240px;
+        width: 100%;
         display: flex;
         line-height: 18px;
         justify-content: space-between;
@@ -85,6 +87,9 @@
           top: 4px;
         }
       }
+      &-price{
+        line-height: 19px;
+      }
     }
   }
   &__total-cost{
@@ -94,5 +99,21 @@
     font-size: 19px;
     line-height: 24px;
     margin: 0 0 20px 0;
+    
+    &-text {
+      letter-spacing: 1.3px;
+      width: max-content;
+      padding: 0 5px 0 0;
+    }
+    &-number{
+      width: max-content;
+      white-space: nowrap;
+      padding: 0 0 0 5px;
+    }
+  }
+  &__dots{
+    width: 100%;
+    border-bottom: 1px dotted $default-color25;
+    margin: 0 0 6px 0;
   }
 }

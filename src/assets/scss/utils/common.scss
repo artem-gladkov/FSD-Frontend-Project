@@ -8,6 +8,12 @@ html, body{
   padding: 20px;
 }
 
+.flex{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .row{
   display: flex;
   justify-content: space-between;

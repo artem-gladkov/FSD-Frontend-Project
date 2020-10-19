@@ -1,9 +1,19 @@
-mixin input(leftLabel, rightLabel, placeholder, classes)
-  .input(class=classes)
-    .input-wrap
-      span(class="input__left-label")=leftLabel
-      span(class="input__right-label")=rightLabel
-    input(type='text' class="input__item" placeholder=placeholder)
+mixin input(options={})
+  - const {leftLabel = 'Text Field', rightLabel = 'Default', placeholder = 'Text', classes = '', type = '', value = ''} = options
+  case type 
+    when 'dropdown'
+      .input.input_type_dropdown(class=classes)
+        .input-wrap
+          span.input__left-label=leftLabel
+          span.input__right-label=rightLabel
+        .input__item=value
+          +tick()
+    default
+      .input(class=classes)
+        .input-wrap
+          span.input__left-label=leftLabel
+          span.input__right-label=rightLabel
+        input.input__item(type='text' placeholder=placeholder)
 
 
 

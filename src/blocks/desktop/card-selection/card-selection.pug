@@ -2,7 +2,6 @@ mixin card-selection()
   .card.card-selection
     h2.heading.card-selection__heading Найдём номера под ваши пожелания
     .card-selection__date
-      +input_type_dropdown('прибытие', '19.08.2019', 'input_size_mini')
-      +input_type_dropdown('выезд', '19.08.2019', 'input_size_mini')
-    +input_type_dropdown('гости', 'Сколько гостей', 'card-selection__guests')
-    +button_with-arrow('Подобрать номер', 'button_size_big card-selection__button')
+      +datepicker({leftLabel: 'Прибытие', rightLabel:'Выезд', type: 'double'})
+    +dropdown({leftLabel: 'Гости', items: ['взрослые','дети', 'младенцы'], placeholder: 'Сколько гостей', classes: 'dropdown_size_big dropdown_content_guests card-selection__guests'})
+    +button({text: 'Подобрать номер', classes: 'button_size_big card-selection__button', arrow: true})

@@ -6,15 +6,16 @@ html(lang="zxx")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Cards
-  body
+  body.cards
     .container
-      .column
-        +card-selection()
-        +card-registration()
-      .column
-        +card-booking()
-        +card-login()
-      .column  
-        +calendar()
-        +card-room("assets/img/imageroom_1.jpg", "", "", "", "888", " люкс", "9 990₽ ", "145 ")
-        +card-room("assets/img/imageroom_2.jpg", "", "", "", "840", "", "9 990₽ ", "65 ")
+      .flex
+        .column380
+          +card-selection()
+          +card-registration()
+        .column380
+          +card-booking()
+          +card-login()
+        .column320 
+          +calendar()
+          +card-room("assets/img/imageroom_1.jpg", "", "", "", "888", " люкс", "9 990₽ ", "145 ")
+          +card-room("assets/img/imageroom_2.jpg", "", "", "", "840", "", "9 990₽ ", "65 ")
