@@ -7,3 +7,4 @@ import '../../blocks/desktop/rate/rate.js';
 import '../../blocks/desktop/expandable-checkbox/expandable-checkbox.js';
 import '../../blocks/desktop/calendar/calendar.js';
 import '../../blocks/desktop/datepicker/datepicker.js';
+import '../../blocks/desktop/card-room/card-room.js';

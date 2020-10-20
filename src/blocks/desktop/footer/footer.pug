@@ -1,5 +1,6 @@
-mixin footer()
-  .footer
+mixin footer(options={})
+  - const {copyright = false} = options
+  footer.footer
     .container.footer__body
       .footer__info
         +logo('footer__logo')
@@ -39,3 +40,5 @@ mixin footer()
         h6.footer__title Подписка
         p.footer__text Получайте специальные предложения и новости сервиса
         +input_type_subscription('', 'Email')
+  if (copyright)
+  +copyright()

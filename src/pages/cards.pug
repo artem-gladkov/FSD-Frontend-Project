@@ -17,5 +17,5 @@ html(lang="zxx")
           +card-login()
         .column320 
           +calendar()
-          +card-room("assets/img/imageroom_1.jpg", "assets/img/imageroom_2.jpg", "assets/img/imageroom_1.jpg", "assets/img/imageroom_2.jpg", "888", " люкс", "9 990₽ ", "145 ")
-          +card-room("assets/img/imageroom_2.jpg", "", "", "", "840", "", "9 990₽ ", "65 ")
+          +card-room({src: ["assets/img/imageroom_1.jpg", "assets/img/imageroom_1.jpg", "assets/img/imageroom_1.jpg", "assets/img/imageroom_1.jpg"], roomNumber: '888', luxe: true, price: "9 990", feedback: "145"})
+          +card-room({src: ["assets/img/imageroom_2.jpg", "assets/img/imageroom_2.jpg", "assets/img/imageroom_2.jpg", "assets/img/imageroom_2.jpg"], roomNumber: '840', price: "9 990", feedback: "145"})

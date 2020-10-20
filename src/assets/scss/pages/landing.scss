@@ -1,0 +1,16 @@
+.landing{
+  .main{
+    max-height: 830px;
+    height: 100%;
+    background-image: url(../img/landing_bg.jpg);
+    background-repeat: no-repeat;
+    background-position-y: -71px;
+    background-size: cover;
+    position: relative;
+  }
+  .card-selection{
+    position: absolute;
+    left: 9.7%;
+    top: 69px;
+  }
+}
