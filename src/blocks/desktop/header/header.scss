@@ -3,7 +3,7 @@
     box-shadow: 0px 10px 20px $default-color5;
     width: 100%;
     &__body{
-        padding: 18px 20px;
+        padding: 16px 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -50,5 +50,9 @@
     }
     &__button-login{
         margin: 0 20px 0 0;
+    }
+    .button{
+        width: min-content;
+        height: min-content;
     }
 }

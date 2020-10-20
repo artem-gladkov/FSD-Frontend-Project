@@ -1,4 +1,5 @@
-mixin header()
+mixin header(options={})
+  - const {entered = false} = options
   header.header
     .container.header__body
       +logo()
@@ -17,5 +18,9 @@ mixin header()
             li.header__nav-item
               a.header__nav-link Соглашения
               +tick
-        +button('Войти', "button_type_transparent header__button-login")
-        +button('Зарегистрироваться', "button_size_big header__button-reg")
+        if (entered)
+          .header__separator
+          a.header__account Юлий Цезарь
+        else 
+          +button({text: 'Войти', classes: "button_type_transparent header__button-login"})
+          +button({text: 'Зарегистрироваться', classes: "button_size_big header__button-reg"})
