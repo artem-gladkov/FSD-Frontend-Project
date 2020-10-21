@@ -1,0 +1,14 @@
+.registration{
+  &__main{
+    height: 100%;
+    background-image: url(../img/jpg/background_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__container{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 20px 0;
+  }
+}
