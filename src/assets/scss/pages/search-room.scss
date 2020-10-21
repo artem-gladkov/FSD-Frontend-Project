@@ -1,0 +1,16 @@
+.search-room{
+  .sidebar{
+    max-width: 266px;
+    width: 100%;
+  }
+  .main{
+    max-width: 834px;
+    width: 100%;
+    .rooms{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+}

@@ -1,0 +1,136 @@
+extends ../assets/pug/extends/page.pug
+
+block vars
+  -
+    bodyClasses = ['search-room']
+    title = 'Search-room'
+
+block content
+  .container
+    .flex
+      aside.sidebar
+        +datepicker({
+          label: 'даты пребывания в отеле',
+          value: '19 авг - 23 авг'
+          })
+
+        +dropdown({
+          leftLabel: 'Гости', 
+          items: ['взрослые','дети', 'младенцы'], 
+          placeholder: 'Сколько гостей', 
+          classes: ['dropdown_size_medium', 'dropdown_content_guests'], 
+          buttons: true
+        })
+
+        +range({
+          title: 'диапазон цены'
+        })
+
+        +checkbox-list({
+          title: 'Правила дома', 
+          items: [
+            'Можно курить', 
+            'Можно с питомцами', 
+            'Можно пригласить гостей (до 10 человек)'
+          ]
+        })
+
+        +checkbox-list({
+          title: 'Доступность', 
+          type: 'rich', 
+          obj: {
+            'Широкий коридор': 'Ширина коридоров в номере не менее 91 см.', 
+            'Помощник для инвалидов': 'На 1 этаже вас встретит специалист  и проводит до номера.'
+          }
+        })
+
+        +dropdown({
+          leftLabel: 'Удобства', 
+          items: ['взрослые','дети', 'младенцы'], 
+          placeholder: 'Сколько гостей', 
+          classes: ['dropdown_size_medium', 'dropdown_content_guests'], 
+          buttons: true
+        })
+
+        +expandable-checkbox({
+          title: 'Дополнительные удобства',
+          items: ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь']
+        })
+      main.main
+        h6.heading Номера, которые мы для вас подобрали
+        .rooms
+          +card-room({
+            src: ['assets/img/rooms/room_888.jpg', 'assets/img/rooms/room_888.jpg', 'assets/img/rooms/room_888.jpg' ,'assets/img/rooms/room_888.jpg'],
+            roomNumber: '888',
+            luxe: true,
+            price: '9 900',
+            feedback: '145'
+          })
+          +card-room({
+            src: ['assets/img/rooms/room_840.jpg', 'assets/img/rooms/room_840.jpg', 'assets/img/rooms/room_840.jpg' ,'assets/img/rooms/room_840.jpg'],
+            roomNumber: '840',
+            price: '9 900',
+            feedback: '65'
+          })
+          +card-room({
+            src: ['assets/img/rooms/room_980.jpg', 'assets/img/rooms/room_980.jpg', 'assets/img/rooms/room_980.jpg' ,'assets/img/rooms/room_980.jpg'],
+            roomNumber: '980',
+            luxe: true,
+            price: '8 500',
+            feedback: '35'
+          })
+          +card-room({
+            src: ['assets/img/rooms/room_856.jpg', 'assets/img/rooms/room_856.jpg', 'assets/img/rooms/room_856.jpg' ,'assets/img/rooms/room_856.jpg'],
+            roomNumber: '856',
+            price: '7 300',
+            feedback: '19'
+          })
+          +card-room({
+            src: ['assets/img/rooms/room_740.jpg', 'assets/img/rooms/room_740.jpg', 'assets/img/rooms/room_740.jpg' ,'assets/img/rooms/room_740.jpg'],
+            roomNumber: '740',
+            price: '6 000',
+            feedback: '44'
+          })
+          +card-room({
+            src: ['assets/img/rooms/room_982.jpg', 'assets/img/rooms/room_982.jpg', 'assets/img/rooms/room_982.jpg' ,'assets/img/rooms/room_982.jpg'],
+            roomNumber: '982',
+            price: '5 800',
+            feedback: '56'
+          })
+          +card-room({
+            src: ['assets/img/rooms/room_678.jpg', 'assets/img/rooms/room_678.jpg', 'assets/img/rooms/room_678.jpg' ,'assets/img/rooms/room_678.jpg'],
+            roomNumber: '678',
+            price: '5 500',
+            feedback: '45'
+          })
+          +card-room({
+            src: ['assets/img/rooms/room_450.jpg', 'assets/img/rooms/room_450.jpg', 'assets/img/rooms/room_450.jpg' ,'assets/img/rooms/room_450.jpg'],
+            roomNumber: '450',
+            price: '5 300',
+            feedback: '39'
+          })
+          +card-room({
+            src: ['assets/img/rooms/room_350.jpg', 'assets/img/rooms/room_350.jpg', 'assets/img/rooms/room_350.jpg' ,'assets/img/rooms/room_350.jpg'],
+            roomNumber: '350',
+            price: '5 000',
+            feedback: '77'
+          })
+          +card-room({
+            src: ['assets/img/rooms/room_666.jpg', 'assets/img/rooms/room_666.jpg', 'assets/img/rooms/room_666.jpg' ,'assets/img/rooms/room_666.jpg'],
+            roomNumber: '666',
+            price: '5 000',
+            feedback: '25'
+          })
+          +card-room({
+            src: ['assets/img/rooms/room_444.jpg', 'assets/img/rooms/room_444.jpg', 'assets/img/rooms/room_444.jpg' ,'assets/img/rooms/room_444.jpg'],
+            roomNumber: '444',
+            price: '5 000',
+            feedback: '15'
+          })
+          +card-room({
+            src: ['assets/img/rooms/room_352.jpg', 'assets/img/rooms/room_352.jpg', 'assets/img/rooms/room_352.jpg' ,'assets/img/rooms/room_352.jpg'],
+            roomNumber: '352',
+            price: '5 000',
+            feedback: '55'
+          })
+        +pagination()

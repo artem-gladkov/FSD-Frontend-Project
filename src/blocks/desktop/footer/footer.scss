@@ -2,10 +2,12 @@
   background-color: white;
   box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
   margin: 0 0 1px 0;
+  border-top: 1px solid $default-color5;
   &__body{
     display: flex;
     justify-content: flex-start;
     padding: 99px 20px;
+    background-color: white;
   }
   &__center{
     display: flex;

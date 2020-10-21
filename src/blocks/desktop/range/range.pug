@@ -1,4 +1,5 @@
-mixin range(title)
+mixin range(options={})
+  -const {title = 'default'} = options
   .range
     .range__top
       h6.range__title=title

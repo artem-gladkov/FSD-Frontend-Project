@@ -1,13 +1,10 @@
 .card-room{
   max-width: 270px;
+  width: 100%;
   background: #FFFFFF;
   box-shadow: 0px 10px 20px $default-color5;
   border-radius: 4px;
   overflow: hidden;
-  margin: 0 0 40px 0;
-  &:last-child{
-    margin: 0;
-  }
   &__slider{
     position: relative;
   }

@@ -39,6 +39,11 @@ mixin footer(options={})
       .footer__subscribe
         h6.footer__title Подписка
         p.footer__text Получайте специальные предложения и новости сервиса
-        +input_type_subscription('', 'Email')
+        +input({
+          leftLabel: '',
+          rightLabel: '',
+          placeholder: 'Email',
+          type: 'arrow'
+        })
   if (copyright)
   +copyright()

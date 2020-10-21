@@ -1,19 +1,15 @@
 mixin input(options={})
-  - const {leftLabel = 'Text Field', rightLabel = 'Default', placeholder = 'Text', classes = '', type = '', value = ''} = options
-  case type 
-    when 'dropdown'
-      .input.input_type_dropdown(class=classes)
-        .input-wrap
+  - const {leftLabel = 'Text Field', rightLabel = 'Default', placeholder = 'Text', classes = '', type = ''} = options
+  .input(class=classes)
+    if(leftLabel != '' || rightLabel != '')
+      .input-wrap
+        if (leftLabel != '')
           span.input__left-label=leftLabel
+        if (rightLabel != '')
           span.input__right-label=rightLabel
-        .input__item=value
-          +tick()
-    default
-      .input(class=classes)
-        .input-wrap
-          span.input__left-label=leftLabel
-          span.input__right-label=rightLabel
-        input.input__item(type='text' placeholder=placeholder)
+    input.input__item(type='text' placeholder=placeholder)
+    if (type == 'arrow')
+      +arrow
 
 
 

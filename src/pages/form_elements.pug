@@ -11,15 +11,46 @@ html(lang="zxx")
       .row.row-one
         .column320.column-one
           .inputs
-            +input({placeholder: 'Email'})
-            +input({rightLabel:'Hover / Focus', placeholder: 'This is pretty awesome'})
-            +dropdown({leftLabel: 'Dropdown', items: ['взрослые','дети', 'младенцы'], placeholder: 'Сколько гостей', classes: 'dropdown_size_big dropdown_content_guests'})
-            +input({leftLabel: 'masked text field', rightLabel: '', placeholder: 'ДД.ММ.ГГГГ'})
-          +datepicker({leftLabel: 'date Dropdown', rightLabel:'date Dropdown', type: 'double', value: '19.08.2019'})
-          +datepicker({label: 'FILTER DATE DROPDOWN', value: '19 авг - 23 авг'})
-          +input_type_subscription('subscription text field', 'Email', 'input_size_medium')
+            +input({
+              placeholder: 'Email'
+            })
+            +input({
+              rightLabel:'Hover / Focus', 
+              placeholder: 'This is pretty awesome'
+            })
+            +dropdown({
+              leftLabel: 'Dropdown', 
+              items: ['взрослые','дети', 'младенцы'], 
+              placeholder: 'Сколько гостей', 
+              classes: 'dropdown_size_big dropdown_content_guests'
+            })
+            +input({
+              leftLabel: 'masked text field', 
+              rightLabel: '', 
+              placeholder: 'ДД.ММ.ГГГГ'
+            })
+          +datepicker({
+            leftLabel: 'date Dropdown', 
+            rightLabel:'date Dropdown',
+            type: 'double', 
+            value: '19.08.2019'
+          })
+          +datepicker({
+            label: 'FILTER DATE DROPDOWN', 
+            value: '19 авг - 23 авг'
+          })
+          +input({
+            leftLabel: 'subscription text field',
+            rightLabel: '',
+            placeholder: 'Email', 
+            classes: 'input_size_medium',
+            type: 'arrow'
+          })
         .column320.column-two
-          +checkbox-list('Checkbox Buttons', ['Можно курить','Можно с питомцами','Можно пригласить гостей (до 10 человек)'])
+          +checkbox-list({
+            title: 'Checkbox Buttons', 
+            items: ['Можно курить','Можно с питомцами','Можно пригласить гостей (до 10 человек)']
+          })
           .radio-buttons
             h6.title Radio Buttons
             +radio('Мужчина', 'gender')
@@ -59,8 +90,14 @@ html(lang="zxx")
         .column320.column-one
           +dropdown({leftLabel: 'Dropdown', rightLabel: 'Default', items: ['спальни','кровати', 'ванные комнаты'], placeholder: 'Выберите удобства', classes: 'dropdown_size_medium dropdown_content_amenities'})
           +dropdown({leftLabel: 'Dropdown', rightLabel: 'expanded', items: ['спальни','кровати', 'ванные комнаты'], placeholder: 'Выберите удобства', classes: 'dropdown_size_medium dropdown_content_amenities', show: true})
-          +expandable-checkbox('expandable checkbox list', ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь'])
-          +expandable-checkbox('expandable checkbox list', ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь'])
+          +expandable-checkbox({
+            title: 'expandable checkbox list', 
+            items: ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь']
+          })          
+          +expandable-checkbox({
+            title: 'expandable checkbox list', 
+            items: ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь']
+          })
         .column320.column-two
           +dropdown({leftLabel: 'Dropdown', items: ['взрослые','дети', 'младенцы'], placeholder: 'Сколько гостей', buttons: true, classes: 'dropdown_size_big dropdown_content_guests', show: true})
           +checkbox-list_type_rich('rich Checkbox Buttons', {'Широкий коридор':'Ширина коридоров в номере не менее 91 см.',

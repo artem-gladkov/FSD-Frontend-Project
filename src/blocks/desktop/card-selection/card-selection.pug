@@ -3,5 +3,5 @@ mixin card-selection()
     h2.heading.card-selection__heading Найдём номера под ваши пожелания
     .card-selection__date
       +datepicker({leftLabel: 'Прибытие', rightLabel:'Выезд', type: 'double'})
-    +dropdown({leftLabel: 'Гости', items: ['взрослые','дети', 'младенцы'], placeholder: 'Сколько гостей', classes: 'dropdown_size_big dropdown_content_guests card-selection__guests'})
+    +dropdown({leftLabel: 'Гости', items: ['взрослые','дети', 'младенцы'], placeholder: 'Сколько гостей', classes: 'dropdown_size_big dropdown_content_guests card-selection__guests', buttons: true})
     +button({text: 'Подобрать номер', classes: 'button_size_big card-selection__button', arrow: true})

@@ -1,8 +1,11 @@
-extends ../assets/pug/extends/landing.pug
+extends ../assets/pug/extends/page.pug
 
 block vars
-  - let bodyClasses = 'landing'
-  - let title = 'Landing'
+  -
+    bodyClasses = ['landing']
+    title = 'Landing'
 
-block main
-  +card-selection()
+block content
+  main.main
+    .container
+      +card-selection()
