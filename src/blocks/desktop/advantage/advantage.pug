@@ -1,7 +1,9 @@
-mixin advantage(title, description, src, alt)
+mixin advantage(options={})
+  - const {title = 'Default', description = 'Description', src = 'assets/img/smiley.svg', alt = 'sticker'} = options
   .advantage
     .advantage__img
       img(src=src, alt=alt)
     .advantage__text
       h6.advantage__title=title
       p.advantage__description=description
+      

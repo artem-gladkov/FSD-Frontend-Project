@@ -49,7 +49,11 @@ html(lang="zxx")
         .column320.column-two
           +checkbox-list({
             title: 'Checkbox Buttons', 
-            items: ['Можно курить','Можно с питомцами','Можно пригласить гостей (до 10 человек)']
+            items: [
+              'Можно курить',
+              'Можно с питомцами',
+              'Можно пригласить гостей (до 10 человек)'
+            ]
           })
           .radio-buttons
             h6.title Radio Buttons
@@ -77,36 +81,117 @@ html(lang="zxx")
                 +button({text: 'Click me'})
                 +button({text: 'Click me'})
               .buttons-row
-                +button({text: 'Click me', classes: 'button_type_transparent'})
-                +button({text: 'Click me', classes: 'button_type_transparent'})
+                +button({
+                  text: 'Click me', 
+                  classes: 'button_type_transparent'
+                })
+                +button({
+                  text: 'Click me', 
+                  classes: 'button_type_transparent'
+                })
               .buttons-row
-                +button({text: 'Click me', classes: 'button_type_light'})
-                +button({text: 'Click me', classes: 'button_type_light'})
-            +button({text: 'Перейти к оплате', classes: 'button_size_big', arrow: true})
+                +button({
+                  text: 'Click me', 
+                  classes: 'button_type_light'
+                })
+                +button({
+                  text: 'Click me', 
+                  classes: 'button_type_light'
+                })
+            +button({
+              text: 'Перейти к оплате', 
+              classes: 'button_size_big', 
+              arrow: true
+            })
           .pagination-block
             h6.title Pagination
             +pagination
       .row.row-two
         .column320.column-one
-          +dropdown({leftLabel: 'Dropdown', rightLabel: 'Default', items: ['спальни','кровати', 'ванные комнаты'], placeholder: 'Выберите удобства', classes: 'dropdown_size_medium dropdown_content_amenities'})
-          +dropdown({leftLabel: 'Dropdown', rightLabel: 'expanded', items: ['спальни','кровати', 'ванные комнаты'], placeholder: 'Выберите удобства', classes: 'dropdown_size_medium dropdown_content_amenities', show: true})
+          +dropdown({
+            leftLabel: 'Dropdown', 
+            rightLabel: 'Default', 
+            items: ['спальни','кровати', 'ванные комнаты'], 
+            placeholder: 'Выберите удобства', 
+            classes: 'dropdown_size_medium dropdown_content_amenities'
+          })
+          +dropdown({
+            leftLabel: 'Dropdown', 
+            rightLabel: 'expanded', 
+            items: ['спальни','кровати', 'ванные комнаты'], 
+            placeholder: 'Выберите удобства', 
+            classes: 'dropdown_size_medium dropdown_content_amenities', 
+            show: true
+          })
           +expandable-checkbox({
             title: 'expandable checkbox list', 
-            items: ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь']
+            items: [
+              'Завтрак', 
+              'Письменный стол', 
+              'Стул для кормления', 
+              'Кроватка', 'Телевизор', 
+              'Шампунь'
+            ]
           })          
           +expandable-checkbox({
             title: 'expandable checkbox list', 
-            items: ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь']
+            items: [
+              'Завтрак', 
+              'Письменный стол', 
+              'Стул для кормления', 
+              'Кроватка', 
+              'Телевизор', 
+              'Шампунь'
+            ]
           })
         .column320.column-two
-          +dropdown({leftLabel: 'Dropdown', items: ['взрослые','дети', 'младенцы'], placeholder: 'Сколько гостей', buttons: true, classes: 'dropdown_size_big dropdown_content_guests', show: true})
-          +checkbox-list_type_rich('rich Checkbox Buttons', {'Широкий коридор':'Ширина коридоров в номере не менее 91 см.',
-        'Помощник для инвалидов':'На 1 этаже вас встретит специалист  и проводит до номера.'})
+          +dropdown({
+            leftLabel: 'Dropdown', 
+            items: ['взрослые','дети', 'младенцы'], 
+            placeholder: 'Сколько гостей', 
+            buttons: true, 
+            classes: 'dropdown_size_big dropdown_content_guests', 
+            show: true
+          })
+          +checkbox-list_type_rich(
+            'rich Checkbox Buttons', 
+            {'Широкий коридор':'Ширина коридоров в номере не менее 91 см.',
+            'Помощник для инвалидов':'На 1 этаже вас встретит специалист  и проводит до номера.'})
         .column320.column-three
-          +dropdown({leftLabel: 'Dropdown', items: ['взрослые','дети', 'младенцы'], placeholder: 'Сколько гостей', buttons: true, classes: 'dropdown_size_big dropdown_content_guests', show: true})
-          +bullet-list('bullet list', ['Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00'])
+          +dropdown({
+            leftLabel: 'Dropdown', 
+            items: ['взрослые','дети', 'младенцы'], 
+            placeholder: 'Сколько гостей',
+            buttons: true, 
+            classes: 'dropdown_size_big dropdown_content_guests', 
+            show: true
+          })
+          +bullet-list({
+            title: 'bullet list', 
+            items: [
+              'Нельзя с питомцами', 
+              'Без вечеринок и мероприятий', 
+              'Время прибытия — после 13:00, а выезд до 12:00'
+            ]
+          })
       .row.row-three
         .advantage-list
-          +advantage('Комфорт', 'Шумопоглощающие стены', '../assets/img/smiley.svg', 'smiley')
-          +advantage('Удобство', 'Окно в каждой из спален', '../assets/img/city.svg', 'city')
-        +comment('Мурад Сарафанов','Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.','5 дней назад', 12, 'assets/img/feedback_1.jpg')
+          +advantage({
+            title: 'Комфорт', 
+            description: 'Шумопоглощающие стены', 
+            src: '../assets/img/smiley.svg', 
+            alt: 'smiley'
+          })
+          +advantage({
+            title: 'Удобство', 
+            description: 'Окно в каждой из спален', 
+            src: '../assets/img/city.svg', 
+            alt: 'city'
+          })
+        +comment({
+          author: 'Мурад Сарафанов',
+          text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.',
+          time: '5 дней назад', 
+          likeCount: 12, 
+          src: 'assets/img/feedback_1.jpg'
+        })

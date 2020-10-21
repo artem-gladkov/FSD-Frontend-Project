@@ -1,6 +1,7 @@
-mixin bullet-list(title, arr)
+mixin bullet-list(options={})
+  - const {title = 'Title', items = ['default']} = options
   .bullet-list
     h6.bullet-list__title=title
     ul.bullet-list__ul
-      each item in arr
+      each item in items
         li.bullet-list__item=item

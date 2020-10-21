@@ -1,0 +1,36 @@
+.room-details{
+  .heading{
+    @include subTitleFont;
+  }
+  .preview{
+    display: grid;
+    grid-template-columns: 68.939% 1fr;
+    grid-template-rows: repeat(2, 50%);
+    background-color: wheat;
+    max-height: 485px;
+    height: 100%;
+    &__img{
+      width: 100%;
+      height: 100%;
+    }
+    &__item_big{
+      grid-area: 1/1/3/1;
+    }
+  }
+  .container{
+    padding: 70px 0;
+  }
+  &__body{
+    max-width: 712px;
+  }
+  &__info{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__rules{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+  
+ 

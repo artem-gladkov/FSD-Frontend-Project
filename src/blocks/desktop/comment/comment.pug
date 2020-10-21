@@ -1,4 +1,5 @@
-mixin comment(author,  text, time, likeCount, src)
+mixin comment(options={})
+  - const {author = 'author',  text = 'text', time = 'time', likeCount = 0, src = 'src'} = options
   .comment
     .comment__left
       .comment__img

@@ -1,0 +1,14 @@
+mixin statistics(options={})
+  - const {title = 'Title', number= '0', items = ['Default','Default','Default','Default']} = options 
+  .statistics
+    h6.heading.statistics__heading=title
+    .statistics__body
+      .statistics__pie
+        img(src="../assets/img/svg/pie.svg", alt="pie")
+        .statistics__pie-number=number
+          p.statistics__pie-text голосов
+      .statistics__list
+        .statistics__item.statistics__item-one=items[0]
+        .statistics__item.statistics__item-two=items[1]
+        .statistics__item.statistics__item-three=items[2]
+        .statistics__item.statistics__item-four=items[3]

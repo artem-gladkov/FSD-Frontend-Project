@@ -7,6 +7,10 @@
     border-radius: 100%;
     overflow: hidden;
     margin: 0 0 12px 0;
+    & img{
+      width: 48px;
+      height: 48px;
+    }
   }
   &__left,
   &__right{
