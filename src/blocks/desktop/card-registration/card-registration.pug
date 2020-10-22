@@ -1,16 +1,48 @@
 mixin card-registration()
   .card.card-registration
     h2.heading.card-registration__heading Регистрация аккаунта
-    +input({placeholder: 'Имя', classes: 'card-registration__name', leftLabel: '', rightLabel: ''})
-    +input({placeholder: 'Фамилия', classes: 'card-registration__surname', leftLabel: '', rightLabel: ''})
+    +input({
+      placeholder: 'Имя',
+      classes: 'card-registration__name', 
+      leftLabel: '', 
+      rightLabel: ''
+    })
+    +input({
+      placeholder: 'Фамилия', 
+      classes: 'card-registration__surname', 
+      leftLabel: '', 
+      rightLabel: ''
+    })
     .card-registration__radio-buttons
       +radio('Мужчина', 'gender')
       +radio('Женщина', 'gender')
-    +input({leftLabel:'Дата рождения', rightLabel: '', placeholder: 'ДД.ММ.ГГГГ', classes: 'card-registration__birthday'})
-    +input({leftLabel: 'Данные для входа в сервис', rightLabel: '', placeholder: 'Email', classes: 'card-registration__email'})
-    +input({placeholder: 'Пароль', classes: 'card-registration__password', leftLabel: '', rightLabel: ''})
+    +input({
+      leftLabel:'Дата рождения', 
+      rightLabel: '', 
+      placeholder: 'ДД.ММ.ГГГГ', 
+      classes: 'card-registration__birthday'
+    })
+    +input({
+      leftLabel: 'Данные для входа в сервис', 
+      rightLabel: '', 
+      placeholder: 'Email', 
+      classes: 'card-registration__email'
+    })
+    +input({
+      placeholder: 'Пароль', 
+      classes: 'card-registration__password', 
+      leftLabel: '', 
+      rightLabel: ''
+    })
     +toggle('Получать спецпредложение', 'card-registration__toggle')
-    +button({text:'Перейти к оплате', classes: 'button_size_big card-registration__button-pay', arrow: true})
+    +button({
+      text:'Перейти к оплате', 
+      classes: 'button_size_big card-registration__button-pay', 
+      arrow: true
+    })
     .card-registration__bottom
       a.card-registration__link Уже есть аккаунт на Toxin
-      +button({text: 'Войти', clsses: 'button_type_transparent'})
+      +button({
+        text: 'Войти',
+        classes: 'button_type_transparent'
+      })

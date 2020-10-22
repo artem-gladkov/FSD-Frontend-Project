@@ -9,6 +9,8 @@
     align-items: center;
     text-transform: uppercase;
     font-size: 12px;
+    line-height: 14.63px;
+    margin: 0 0 4px 0;
     &-left{
       font-weight: bold;
       color: $default-color;
@@ -63,7 +65,7 @@
     max-width: 320px;
     width: 100%;
     background-color: white;
-    padding: 7px 7px 0px 15px;
+    padding: 6px 5px 0 14px;
     border: 1px solid $default-color50;
     border-top: none;
     border-bottom-right-radius: 4px;
@@ -76,7 +78,7 @@
       font-size: 12px;
       font-weight: bold;
       text-transform: uppercase;
-      margin: 13px 0 13px 0;
+      margin: 16px 0 7px 0;
       &-clear,
       &-apply{
         cursor: pointer;
@@ -92,13 +94,15 @@
       color: $default-color;
       text-transform: uppercase;
       font-size: 12px;
+      line-height: 14.63px;
+      padding: 7px 0 0 0;
       user-select: none;
     }
     &-count{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 92px;
+      width: 93px;
     }
     &-btn{
       width: 30px;

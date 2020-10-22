@@ -28,6 +28,7 @@
     border: 1px solid $default-color25;
     border-radius: 3px;
     position: relative;
+    margin: 0 0 14px 0;
   }
   &__bar{
     position: absolute;
@@ -52,5 +53,10 @@
     &_right{
       left: 159px;
     }
+  }
+  &__description{
+    color: $default-color50;
+    line-height: 14px;
+    font-size: 12px;
   }
 }

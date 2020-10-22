@@ -1,6 +1,9 @@
 .datepicker_type_double{
   max-width: 320px;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   .datepicker__field{
     width: 150px;
   }

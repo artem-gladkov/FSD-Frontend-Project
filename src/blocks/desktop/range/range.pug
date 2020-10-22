@@ -1,5 +1,5 @@
 mixin range(options={})
-  -const {title = 'default'} = options
+  -const {title = 'default', description = ''} = options
   .range
     .range__top
       h6.range__title=title
@@ -8,3 +8,5 @@ mixin range(options={})
       .range__bar
       span(class="range__slide range__slide_left")
       span(class="range__slide range__slide_right")
+    if (description)
+      p.range__description=description
