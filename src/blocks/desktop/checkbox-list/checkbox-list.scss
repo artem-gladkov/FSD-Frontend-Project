@@ -7,9 +7,12 @@
     font-weight: bold;
     color: $default-color;
     text-transform: uppercase;
-    margin: 0 0 17px 0;
+    margin: 0 0 16px 0;
   }
   .checkbox{
-    margin: 0 0 3px 0;
+    margin: 0 0 10px 0;
+    &:last-child{
+      margin: 0;
+    }
   }
 }

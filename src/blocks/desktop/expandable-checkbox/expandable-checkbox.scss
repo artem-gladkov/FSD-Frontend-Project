@@ -7,6 +7,7 @@
     text-transform: uppercase;
     font-weight: bold;
     font-size: 12px;
+    line-height: 14.63px;
     width: 100%;
     color: $default-color;
     position: relative;
@@ -14,7 +15,7 @@
     cursor: pointer;
     & > .tick{
       right: 18px;
-      top: 5px;
+      top: 1px;
     }
   }
   &.show > &__checklist{
@@ -22,15 +23,15 @@
   }
   &.show > &__title .tick{
     transform: rotate(180deg);
-    top: 10px;
+    top: 5px;
     right: 18px;
   }
   &__checklist{
     display: none;
     z-index: 1;
-    margin: 13px 0 0 0;
+    margin: 18px 0 0 0;
     .checkbox{
-      margin: 0 0 3px 0;
+      margin: 0 0 10px 0;
     }
   }
 }

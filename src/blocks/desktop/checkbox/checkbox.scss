@@ -1,65 +1,43 @@
 .checkbox{
-  &:last-child{
-    margin: 0;
+  max-width: 266px;
+  width: 100%;
+  user-select: none;
+  &__box{
+    min-width: 20px;
+    height: 20px;
+    border: 1px solid $default-color25;
+    border-radius: 4px;
+    margin: 0 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__input:checked + &__box > &__mark{
+    opacity: 1;
+    transition: all ease .3s;
+  }
+  &__input:checked + &__box{
+    border: 1px solid $primary-color;
+  }
+  &__mark{
+    opacity: 0;
+    transition: all ease .3s;
   }
   &__label{
-    max-width: 266px;
-    white-space: nowrap;
-    vertical-align: top;  
-    display: inline-block;
+    position: relative;
+    display: flex;
   }
-  &__input {
+  &__input{
     position: absolute;
     z-index: -1;
     opacity: 0;
-    &:not(:disabled):not(:checked)+.checkbox__text:hover::before{
-      border-color: $primary-color;
-    }
-    &:checked+.checkbox__text::before{
-      border-color: $primary-color;
-    }
-    &:checked+.checkbox__text::after{
-      display: block;
-      opacity: 1;
-      border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%) 25%;
-      transition: all .3s ease;
-    }
   }
-  &__text {
-    display: inline-flex;
-    align-items: flex-start;
-    user-select: none;
-    white-space: normal;
-    position: relative;
-    line-height: 18px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    line-height: 19px;
+    max-width: 215px;
     color: $default-color50;
-    max-width: 222px;
-    &::before {
-      content: '';
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      flex-shrink: 0;
-      flex-grow: 0;
-      border: 1px solid #adb5bd;
-      border-radius: 4px;
-      margin-right: 10px;
-    }
-    &::after {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 6px;
-      height: 8px;
-      flex-shrink: 0;
-      flex-grow: 0;
-      border: 2px solid transparent;
-      border-top: none;
-      border-left: none;
-      transform: rotate(45deg);
-      top: 5px;
-      left: 7px;
-      transition: all .3s ease;
-    }
   }
 }

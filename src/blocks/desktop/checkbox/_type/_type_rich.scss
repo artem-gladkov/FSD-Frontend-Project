@@ -1,17 +1,19 @@
 .checkbox_type_rich{
-  .checkbox__text{
-    font-weight: bold;
+  .checkbox__item{
     color: $default-color75;
-    white-space: nowrap;
-    min-width: 100%;
-    line-height: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 0 0 5px 0;
   }
   .checkbox__description{
     font-size: 12px;
     line-height: 14.63px;
     color: $default-color50;
-    padding: 0 0 0 30px;
     width: 98%;
     white-space: normal;
+  }
+  .checkbox__inner{
+    display: flex;
+    flex-direction: column;
   }
 }

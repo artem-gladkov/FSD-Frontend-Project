@@ -1,5 +1,19 @@
-mixin checkbox(item)
-  .checkbox
-    label.checkbox__label
-      input.checkbox__input(type="checkbox")
-      p.checkbox__text=item
+mixin checkbox(options={})
+  - const {item = 'default', type = 'default', description = 'description'} = options
+  case type
+    when 'rich'
+      .checkbox.checkbox_type_rich
+        label.checkbox__label
+          input.checkbox__input(type="checkbox")
+          .checkbox__box
+            img.checkbox__mark(src="assets/img/svg/checkbox-mark.svg", alt="")
+          .checkbox__inner
+            p.checkbox__item=item
+            p.checkbox__description=description
+    default
+      .checkbox
+        label.checkbox__label
+          input.checkbox__input(type="checkbox")
+          .checkbox__box
+            img.checkbox__mark(src="assets/img/svg/checkbox-mark.svg")
+          p.checkbox__item=item

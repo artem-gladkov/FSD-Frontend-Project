@@ -1,15 +1,16 @@
 mixin checkbox-list(options={})
   - const {title = 'default', items = ['default'], type = 'default', obj = {'value': 'description'}} = options
-  if (type === 'rich')
-    .checkbox-list.checkbox-list_type_rich 
-      p.checkbox-list__title=title
-      each description,value in obj
-        +checkbox_type_rich(value, description)
-  else
-    .checkbox-list
-      h6.checkbox-list__title=title
-      each item in items
-        +checkbox(item)
+  case type
+    when 'rich' 
+      .checkbox-list.checkbox-list_type_rich 
+        p.checkbox-list__title=title
+        each description,value in obj
+          +checkbox({item: value, description: description, type: 'rich'})
+    default
+      .checkbox-list
+        h6.checkbox-list__title=title
+        each value in items
+          +checkbox({item: value})
 
       
         

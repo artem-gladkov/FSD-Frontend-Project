@@ -4,5 +4,5 @@ mixin expandable-checkbox(options={})
     h6.expandable-checkbox__title=title
       +tick
     .expandable-checkbox__checklist
-      each item in items
-        +checkbox(item)
+      each value in items
+        +checkbox({item: value})
