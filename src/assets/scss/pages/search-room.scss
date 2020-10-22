@@ -1,16 +1,39 @@
 .search-room{
+  .main-content{
+    padding: 24px 0 70px 0;
+  }
   .sidebar{
-    max-width: 266px;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+    row-gap: 22px;
+    .grid-inner{
+      display: grid;
+      grid-auto-rows: min-content;
+      row-gap: 31px;
+    }
   }
   .main{
+    padding: 5px 0 0 0;
     max-width: 834px;
     width: 100%;
+    &__header{
+      @include titleFont;
+      letter-spacing: 0.7px;
+      margin: 0 0 21px 0;
+    }
     .rooms{
-      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px 12px;
+    }
+    .pagination-wrap{
       display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      justify-content: center;
+      margin: 41px 0 0 0;
+      .pagination{
+        margin: 0 14px 0 0;
+      }
     }
   }
 }

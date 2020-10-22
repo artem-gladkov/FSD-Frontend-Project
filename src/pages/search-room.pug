@@ -12,52 +12,53 @@ block content
         +datepicker({
           label: 'даты пребывания в отеле',
           value: '19 авг - 23 авг'
+        })
+        .grid-inner 
+          +dropdown({
+            leftLabel: 'Гости', 
+            items: ['взрослые','дети', 'младенцы'], 
+            placeholder: 'Сколько гостей', 
+            classes: ['dropdown_size_medium', 'dropdown_content_guests'], 
+            buttons: true
           })
 
-        +dropdown({
-          leftLabel: 'Гости', 
-          items: ['взрослые','дети', 'младенцы'], 
-          placeholder: 'Сколько гостей', 
-          classes: ['dropdown_size_medium', 'dropdown_content_guests'], 
-          buttons: true
-        })
+          +range({
+            title: 'диапазон цены',
+            description: 'Стоимость за сутки пребывания в номере'
+          })
 
-        +range({
-          title: 'диапазон цены'
-        })
+          +checkbox-list({
+            title: 'Правила дома', 
+            items: [
+              'Можно курить', 
+              'Можно с питомцами', 
+              'Можно пригласить гостей (до 10 человек)'
+            ]
+          })
 
-        +checkbox-list({
-          title: 'Правила дома', 
-          items: [
-            'Можно курить', 
-            'Можно с питомцами', 
-            'Можно пригласить гостей (до 10 человек)'
-          ]
-        })
+          +checkbox-list({
+            title: 'Доступность', 
+            type: 'rich', 
+            obj: {
+              'Широкий коридор': 'Ширина коридоров в номере не менее 91 см.', 
+              'Помощник для инвалидов': 'На 1 этаже вас встретит специалист  и проводит до номера.'
+            }
+          })
 
-        +checkbox-list({
-          title: 'Доступность', 
-          type: 'rich', 
-          obj: {
-            'Широкий коридор': 'Ширина коридоров в номере не менее 91 см.', 
-            'Помощник для инвалидов': 'На 1 этаже вас встретит специалист  и проводит до номера.'
-          }
-        })
+          +dropdown({
+            leftLabel: 'Удобства номера', 
+            items: ['взрослые','дети', 'младенцы'], 
+            placeholder: 'Сколько гостей', 
+            classes: ['dropdown_size_medium', 'dropdown_content_guests'], 
+            buttons: true
+          })
 
-        +dropdown({
-          leftLabel: 'Удобства', 
-          items: ['взрослые','дети', 'младенцы'], 
-          placeholder: 'Сколько гостей', 
-          classes: ['dropdown_size_medium', 'dropdown_content_guests'], 
-          buttons: true
-        })
-
-        +expandable-checkbox({
-          title: 'Дополнительные удобства',
-          items: ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь']
-        })
+          +expandable-checkbox({
+            title: 'Дополнительные удобства',
+            items: ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь']
+          })
       main.main
-        h6.heading Номера, которые мы для вас подобрали
+        h6.main__header Номера, которые мы для вас подобрали
         .rooms
           +card-room({
             src: ['assets/img/rooms/room_888.jpg', 'assets/img/rooms/room_888.jpg', 'assets/img/rooms/room_888.jpg' ,'assets/img/rooms/room_888.jpg'],
@@ -133,4 +134,5 @@ block content
             price: '5 000',
             feedback: '55'
           })
-        +pagination()
+        .pagination-wrap
+          +pagination()
