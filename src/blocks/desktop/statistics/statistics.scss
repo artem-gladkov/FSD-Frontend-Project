@@ -1,8 +1,13 @@
 .statistics{
   max-width: 311px;
   &__heading{
+    color: $default-color;
+    font-weight: bold;
     font-size: 19px;
     margin: 0 0 20px 0;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+    font-family: $titleFont;
   }
   &__body{
     display: flex;
@@ -32,10 +37,12 @@
       font-size: 12px;
       line-height: 14.63px;
       font-family: $mainFont;
+      text-transform: uppercase;
+      margin: 0 0 5px 0;
     }
   }
   &__list{
-    margin: 30px 0 0 0;
+    margin: 26px 0 0 0;
   }
   &__item{
     &::before{

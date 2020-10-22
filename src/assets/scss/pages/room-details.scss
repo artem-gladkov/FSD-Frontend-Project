@@ -1,35 +1,75 @@
 .room-details{
-  .heading{
+  &__heading{
     @include subTitleFont;
+    letter-spacing: 0.6px;
   }
-  .preview{
+  &__preview{
     display: grid;
     grid-template-columns: 68.939% 1fr;
     grid-template-rows: repeat(2, 50%);
     background-color: wheat;
     max-height: 485px;
     height: 100%;
-    &__img{
+    &-img{
       width: 100%;
       height: 100%;
     }
-    &__item_big{
+    &-item_big{
       grid-area: 1/1/3/1;
     }
   }
-  .container{
-    padding: 70px 0;
+  &__main{
+    padding: 70px 0 63px 0;
   }
-  &__body{
-    max-width: 712px;
+  &__content{
+    max-width: 711px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 13px;
   }
-  &__info{
-    display: flex;
-    justify-content: space-between;
+  &__advantages-heading{
+    margin: 0;
   }
-  &__rules{
-    display: flex;
-    justify-content: space-between;
+  &__advantage:last-child{
+    padding: 20px 0 0 0;
+    border-bottom: unset;
+  }
+  &__reviews{
+    grid-column: 1 / span 2;
+    &-header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 0 20px 0;
+    }
+    &-heading{
+      margin: 0;
+      letter-spacing: 0.7px;
+    }
+  }
+  &__comment{
+    &:nth-child(n){
+      margin: 0 0 23px 0;
+    }
+    &:last-child{
+      margin: 0;
+    }
+  }
+  &__bullet-list{
+    .bullet-list__title{
+      padding: 0 0 0 20px;
+      margin: 0 0 16px 0;
+      @include subTitleFont;
+      text-transform: unset;
+      letter-spacing: 1px;
+    }
+  }
+  &__insert{
+    max-width: 340px;
+    &-heading{
+      margin: 0 0 15px 0;
+      letter-spacing: 1px;
+    }
   }
 }
   
