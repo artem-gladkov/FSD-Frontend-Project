@@ -1,6 +1,12 @@
 mixin bullet-list(options={})
-  - const {title = 'Title', items = ['default']} = options
-  .bullet-list
+  - 
+    const {
+      title = 'Title', 
+      items = ['default'],
+      classes = ['']
+    } = options
+
+  .bullet-list(class=classes)
     h6.bullet-list__title=title
     ul.bullet-list__ul
       each item in items

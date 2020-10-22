@@ -1,6 +1,14 @@
 mixin advantage(options={})
-  - const {title = 'Default', description = 'Description', src = 'assets/img/smiley.svg', alt = 'sticker'} = options
-  .advantage
+  - 
+    const {
+      title = 'Default', 
+      description = 'Description', 
+      src = 'assets/img/smiley.svg', 
+      alt = 'sticker',
+      classes = ['']
+    } = options
+  
+  .advantage(class=classes)
     .advantage__img
       img(src=src, alt=alt)
     .advantage__text

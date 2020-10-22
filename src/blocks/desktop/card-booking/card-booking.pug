@@ -6,8 +6,18 @@ mixin card-booking()
         span.card-booking__heading-text люкс
       p.card-booking__room-price 9 990₽ 
         span.card-booking__room-price-text в сутки 
-    +datepicker({leftLabel: "Прибытие", rightLabel: 'Выезд', classes: "input_size_mini card-booking__date", type: 'double'})
-    +dropdown({leftLabel: 'Гости', items: ['взрослые','дети', 'младенцы'], placeholder: 'Сколько гостей', classes: 'dropdown_size_big dropdown_content_guests card-booking__guests'})
+    +datepicker({
+      leftLabel: "Прибытие", 
+      rightLabel: 'Выезд',
+      classes: "input_size_mini card-booking__date", 
+      type: 'double'
+    })
+    +dropdown({
+      leftLabel: 'Гости', 
+      items: ['взрослые','дети', 'младенцы'], 
+      placeholder: 'Сколько гостей', 
+      classes: 'dropdown_size_big dropdown_content_guests card-booking__guests'
+    })
     .card-booking__cart
       .card-booking__cart-item
         p.card-booking__cart-item-text 9 990₽ х 4 суток
@@ -24,4 +34,7 @@ mixin card-booking()
       p.card-booking__total-cost-text Итого
       .card-booking__dots
       p.card-booking__total-cost-number 38 081₽
-    +button({text: 'Забронировать', classes: 'button_size_big card-booking__button'})
+    +button({
+      text: 'Забронировать', 
+      classes: 'button_size_big card-booking__button'
+    })

@@ -1,6 +1,14 @@
 mixin comment(options={})
-  - const {author = 'author',  text = 'text', time = 'time', likeCount = 0, src = 'src'} = options
-  .comment
+  - 
+    const {
+      author = 'author',  
+      text = 'text', 
+      time = 'time', 
+      likeCount = 0, 
+      src = 'src',
+      classes = [''] 
+    } = options
+  .comment(class=classes)
     .comment__left
       .comment__img
         img(src=src, alt=author)
