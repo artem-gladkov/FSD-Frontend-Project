@@ -25,20 +25,25 @@ html(lang="zxx")
                 placeholder: 'Сколько гостей', 
                 classes: 'dropdown_size_big dropdown_content_guests'
               })
-              +input({
-                leftLabel: 'masked text field', 
-                rightLabel: '', 
-                placeholder: 'ДД.ММ.ГГГГ'
+              +datepicker({
+                label: 'masked text field',
+                inputClasses: ['datepicker_type_common'],
+                classes: ['datepicker-input_size_big']
               })
             +datepicker({
               leftLabel: 'date Dropdown', 
               rightLabel:'date Dropdown',
               type: 'double', 
-              value: '19.08.2019'
+              value: '19.08.2019',
+              tick: true,
+              inputClasses: ['datepicker_type_double']
             })
             +datepicker({
               label: 'FILTER DATE DROPDOWN', 
-              value: '19 авг - 23 авг'
+              value: '19 авг - 23 авг',
+              tick: true,
+              classes: ['datepicker-input_size_medium'],
+              inputClasses: ['datepicker_type_filter']
             })
             +input({
               leftLabel: 'subscription text field',

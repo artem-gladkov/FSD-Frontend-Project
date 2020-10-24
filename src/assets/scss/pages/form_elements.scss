@@ -5,27 +5,22 @@
     margin: 0 0 96px 0;
     .column-one{
       .inputs{
-        margin: 0 0 35px 0;
         & .input:nth-child(1){
           margin: 0 0 21px 0;
         }
         & .input:nth-child(2){
-          margin: 0 0 17px 0;
+          margin: 0 0 22px 0;
         }
         & .dropdown{
-          margin: 0 0 23px 0;
+          margin: 0 0 18px 0;
         }
       }
       
-      .datepicker{
+      .datepicker-input{
         margin: 0 0 36px 0;
       }
 
       .datepicker:nth-child(3){
-        margin: 0 0 42px 0;
-      }
-
-      .input_type_dropdown{
         margin: 0 0 42px 0;
       }
     }

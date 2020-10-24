@@ -1,21 +1,34 @@
 mixin datepicker(options={})
-  - const {label = 'Datepicker', value = '', type = '', leftLabel = '', rightLabel = '', classes = ''} = options
+  - 
+    const {
+      label = 'Datepicker', 
+      value = '', 
+      type = '', 
+      leftLabel = '', 
+      rightLabel = '', 
+      classes = '' , 
+      inputClasses = [], 
+      tick = false
+    } = options
   case type
     when 'double'
-      .datepicker.datepicker_type_double(class=classes)
-        .datepicker__field.datepicker__from
-          label.datepicker__label(for="datepicker__from")=leftLabel
-            input(type="text" class="datepicker__input datepicker__from-input" name="datepicker__from" placeholder="ДД.MM.ГГГГ")
-            +tick()
-        .datepicker__field.datepicker__to 
-          label.datepicker__label(for="datepicker__to")=rightLabel
-            input(type="text" class=" datepicker__input datepicker__to-input" name="datepicker__to" placeholder="ДД.MM.ГГГГ" value=value)
-            +tick()
+      .datepicker-input.datepicker-input_type_double(class=classes)
+        .datepicker-input__field.datepicker-input__from
+          label.datepicker-input__label(for="datepicker__from")=leftLabel
+            input.datepicker-input__value.datepicker-input__value-from(type="text" class=inputClasses name="datepicker-input__value-from" placeholder="ДД.MM.ГГГГ")
+            if(tick)
+              +tick()
+        .datepicker-input__field.datepicker-input__to 
+          label.datepicker-input__label(for="datepicker__to")=rightLabel
+            input.datepicker-input__value.datepicker-input__value-to(type="text" class=" datepicker-input__value datepicker-input__value-to" name="datepicker-input__to" placeholder="ДД.MM.ГГГГ" value=value)
+            if(tick)
+              +tick()
     default 
-      .datepicker(class=classes)
-        .datepicker__field
-          label.datepicker__label=label
-            input(type="text" class="datepicker__input" placeholder="ДД.MM.ГГГГ" value=value)
-            +tick()
+      .datepicker-input(class=classes)
+        .datepicker-input__field
+          label.datepicker-input__label=label
+            input.datepicker-input__value(type="text" class=inputClasses placeholder="ДД.MM.ГГГГ" value=value )
+            if(tick)
+              +tick()
 
         
