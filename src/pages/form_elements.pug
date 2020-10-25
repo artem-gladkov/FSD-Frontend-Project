@@ -76,8 +76,12 @@ html(lang="zxx")
             .rate-buttons
               h6.title Rate button
               .rate-buttons-wrap
-                +rate
-                +rate
+                +rate({
+                  rating: 4
+                })
+                +rate({
+                  rating: 5
+                })
           .column320.column-three
             +range({title: 'Range Slider'})
             .buttons

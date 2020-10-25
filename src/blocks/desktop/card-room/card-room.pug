@@ -1,5 +1,13 @@
 mixin card-room(options={})
-  - const {src = [], roomNumber = '999', luxe = false, price = '9 990', feedback = '100', stars = 0} = options
+  - 
+    const {
+      src = [], 
+      roomNumber = '999', 
+      luxe = false, 
+      price = '9 990', 
+      feedback = '100', 
+      rating = 0
+    } = options
   .card-room 
     .card-room__slider
       each slide in src 
@@ -14,7 +22,10 @@ mixin card-room(options={})
         p.card-room__price=price + '₽ '
           span.card-room__price-text в сутки 
       .card-room__info-bottom
-        +rate("card-room__rate")
+        +rate({
+          classes: ["card-room__rate"],
+          rating: rating
+        })
         p.card-room__feedback=feedback + ' '
           span Отзывов
       

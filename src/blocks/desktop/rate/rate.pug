@@ -1,13 +1,13 @@
 
-mixin rate(classes)
-  div.rate(class=classes)
-    div.rate__star
-      img(src="assets/img/star_border.svg", alt="star")
-    div.rate__star
-      img(src="assets/img/star_border.svg", alt="star")
-    div.rate__star
-      img(src="assets/img/star_border.svg", alt="star")
-    div.rate__star
-      img(src="assets/img/star_border.svg", alt="star")
-    div.rate__star
-      img(src="assets/img/star_border.svg", alt="star")
+mixin rate(options={})
+  - let {classes = [], rating = 0, i = 5} = options
+  - let emptyStars = i - rating
+  .rate(class=classes)
+    while rating > 0
+      - rating--
+      .rate__star
+        img(src="assets/img/star.svg", alt="star")
+    while emptyStars > 0 
+      - emptyStars--
+      .rate__star(class=classes)
+        img(src="assets/img/star_border.svg", alt="star")
