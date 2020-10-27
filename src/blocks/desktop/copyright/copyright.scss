@@ -2,11 +2,15 @@
   background: white;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   width: 100%;
+  border-top: 1px solid $default-color5;
   &__body{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 23px 20px;
+  }
+  &__logo{
+    display: none;
   }
   &__text{
     line-height: 17px;
@@ -25,5 +29,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+@media (max-width: 767px){
+  .copyright{
+    &__logo{
+      display: block;
+      margin: 0 0 20px 0;
+    }
+    &__body{
+      flex-direction: column;
+      padding: 120px 0;
+      justify-content: center;
+      align-items: center;
+    }
+    &__text{
+      margin: 0 0 25px 0;
+    }
   }
 }

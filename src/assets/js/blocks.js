@@ -10,3 +10,4 @@ import '../../blocks/desktop/card-room/card-room';
 import '../../blocks/desktop/datepicker/datepicker';
 import '../../blocks/desktop/datepicker/_type/_type_double';
 import '../../blocks/desktop/datepicker/_type/_type_filter';
+import '../../blocks/desktop/header/header';

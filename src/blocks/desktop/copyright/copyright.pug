@@ -1,6 +1,11 @@
-mixin copyright()
-  .copyright
+mixin copyright(options={})
+  - 
+    const {
+      classes = []
+    } = options
+  .copyright(class=classes)
     .container.copyright__body
+      +logo({classes: ['copyright__logo']})
       p.copyright__text Copyright © 2018 Toxin отель. Все права зачищены.
       .copyright__social
         .copyright__twitter

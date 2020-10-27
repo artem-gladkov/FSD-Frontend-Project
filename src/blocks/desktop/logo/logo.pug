@@ -1,4 +1,8 @@
-mixin logo(classes)
+mixin logo(options={})
+  - 
+    const {
+      classes = []
+    } = options
   .logo(class=classes)
     a.logo__link
       img.logo(src="assets/img/Logo.svg", alt="Logo")

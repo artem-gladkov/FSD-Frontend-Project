@@ -4,41 +4,39 @@
   margin: 0 0 1px 0;
   border-top: 1px solid $default-color5;
   &__body{
-    display: flex;
-    justify-content: flex-start;
     padding: 99px 20px;
     background-color: white;
-  }
-  &__center{
-    display: flex;
-    justify-content: space-between;
-    max-width: 550px;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 260px 1fr 260px;
+    gap: 20px 40px;
   }
   &__logo{
     margin: 0 0 17px 0;
   }
   &__info{
     max-width: 260px;
-    margin: 0 40px 0 0;
   }
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__nav{
     max-width: min-content;
     white-space: nowrap;
     width: 100%;
-    margin: 0 58px 0 0;
   }
   &__about{
     max-width: min-content;
     white-space: nowrap;
     width: 100%;
-    margin: 0 93px 0 0;
+    margin: 0 35px 0 0;
   }
   &__support{
     max-width: min-content;
     white-space: nowrap;
     width: 100%;
-    margin: 0 52px 0 0;
+    margin: 0 12px 0 0;
   }
   &__title{
     color: $default-color;
@@ -63,6 +61,69 @@
     max-width: 260px;
     .footer__text{
       margin: 0 0 17px 0;
+    }
+  }
+}
+
+@media (max-width: 1160px){
+  .footer{
+    &__body{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+
+    }
+    &__inner{
+      grid-area: 2/1/2/3;
+      order: 1;
+      justify-content: space-between
+      
+    }
+    &__info{
+      max-width: 100%;
+    }
+    &__subscribe{
+      max-width: 100%;
+      justify-self: right;
+    }
+    &__about{
+      margin: 0;
+    }
+  }
+}
+@media (max-width:550px){
+  .footer{
+    &__body{
+      grid-template-columns: 1fr;
+      grid-template-rows: unset;
+      gap: 40px 0;
+    }
+    &__logo{
+      justify-content: center;
+    }
+    &__info{
+      text-align: center;
+      justify-self: center;
+    }
+    &__inner{
+      flex-direction: column;
+      align-items: center;
+      grid-area: unset;
+      order: 1;
+      justify-self: center;
+    }
+
+    &__list{
+      margin: 0 0 30px 0;
+      text-align: center;
+    }
+
+    &__subscribe{
+      justify-self: center;
+      text-align: center;
+      .input{
+        margin:  0 auto;
+        width: 100%;
+      }
     }
   }
 }
