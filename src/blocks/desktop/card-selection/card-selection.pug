@@ -5,7 +5,9 @@ mixin card-selection()
       +datepicker({
         leftLabel: 'Прибытие', 
         rightLabel:'Выезд', 
-        type: 'double'
+        type: 'double',
+        tick: true,
+        inputClasses: ['datepicker_type_double']
       })
     +dropdown({
       leftLabel: 'Гости', 

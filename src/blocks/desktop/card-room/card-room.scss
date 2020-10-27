@@ -7,6 +7,14 @@
   overflow: hidden;
   &__slider{
     position: relative;
+    &:hover .slick-arrow,
+    &:hover .slick-dots{
+      opacity: 1;
+      transition: all ease .4s;
+    }
+  }
+  &__slide > img{
+    width: 100%;
   }
   &__info{
     padding: 20px 16px 19px 20px;
@@ -36,9 +44,10 @@
     }
     &-text{
       color: $primary-color;
-      font-size: 12px;
+      font-size: 15.5px;
       line-height: 14.63px;
       font-weight: bold;
+      margin: 0 0 0 5px;
     }
   }
   &__price{
@@ -71,6 +80,9 @@
     width: 42px;
     padding: 0;
     z-index: 2;
+    opacity: 0;
+    transition: all ease .4s;
+    cursor: pointer;
     &::before{
       content: '';
       width: 8px;
@@ -118,4 +130,8 @@
   .slick-active{
     background: white;
   }
+}
+
+@media (max-width: 550px){
+  
 }

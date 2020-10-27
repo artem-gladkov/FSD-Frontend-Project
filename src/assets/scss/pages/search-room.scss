@@ -7,6 +7,8 @@
     grid-template-columns: 1fr;
     grid-template-rows: min-content 1fr;
     row-gap: 22px;
+    min-width: 266px;
+    margin: 0 25px 0 0;
     .grid-inner{
       display: grid;
       grid-auto-rows: min-content;
@@ -24,8 +26,12 @@
     }
     .rooms{
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
       gap: 20px 12px;
+      .card-room{
+        max-width: 370px;
+        justify-self: center;
+      }
     }
     .pagination-wrap{
       display: flex;

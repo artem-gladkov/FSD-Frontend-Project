@@ -7,20 +7,20 @@ mixin datepicker(options={})
       leftLabel = '', 
       rightLabel = '', 
       classes = '' , 
-      inputClasses = [], 
+      inputClasses = ['datepicker-here'], 
       tick = false
     } = options
   case type
     when 'double'
       .datepicker-input.datepicker-input_type_double(class=classes)
         .datepicker-input__field.datepicker-input__from
-          label.datepicker-input__label(for="datepicker__from")=leftLabel
-            input.datepicker-input__value.datepicker-input__value-from(type="text" class=inputClasses name="datepicker-input__value-from" placeholder="ДД.MM.ГГГГ")
+          label.datepicker-input__label=leftLabel
+            input.datepicker-input__value.datepicker-input__value-from(type="text" placeholder="ДД.MM.ГГГГ")
             if(tick)
               +tick()
         .datepicker-input__field.datepicker-input__to 
-          label.datepicker-input__label(for="datepicker__to")=rightLabel
-            input.datepicker-input__value.datepicker-input__value-to(type="text" class=" datepicker-input__value datepicker-input__value-to" name="datepicker-input__to" placeholder="ДД.MM.ГГГГ" value=value)
+          label.datepicker-input__label=rightLabel
+            input.datepicker-input__value.datepicker-input__value-to(type="text"  placeholder="ДД.MM.ГГГГ" value=value)
             if(tick)
               +tick()
     default 

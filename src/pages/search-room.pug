@@ -11,7 +11,9 @@ block content
       aside.sidebar
         +datepicker({
           label: 'даты пребывания в отеле',
-          value: '19 авг - 23 авг'
+          value: '19 авг - 23 авг',
+          inputClasses: ['datepicker_type_filter'],
+          classes: ['datepicker-input_size_medium']
         })
         .grid-inner 
           +dropdown({
