@@ -12,6 +12,7 @@
   font-weight: $labelFontWeight;
   color: $labelFontColor;
   line-height: $labelLineHeight;
+  text-transform: uppercase;
 }
 
 @mixin titleFont {

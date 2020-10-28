@@ -1,0 +1,13 @@
+mixin color(options={})
+  - 
+    const {
+      title = 'Color',
+      description = '#000000',
+      color = 'default-color',
+      classes = []
+    } = options
+  .color(class=classes)
+    .color__box(class=color)
+    .color__info
+      p.color__title=title
+      p.color__description=description

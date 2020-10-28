@@ -1,0 +1,72 @@
+
+.colors-type{
+  padding: 145px 0;
+  .color{
+    margin: 0 0 20px 0;
+  }
+
+  .paragraphs{
+    max-width: 336px;
+    margin: 0 61px 0 0;
+  }
+  &__h1{
+    @include titleFont;
+    position: relative;
+    margin: 0 0 50px 0;
+    &:before{
+      content: 'H1';
+      position: absolute;
+      left: -58px;
+      top: 0;
+      color: $default-color25;
+      font-size: 24px;
+      font-family: $mainFont;
+      font-weight: normal;
+    }
+  }
+  &__h2{
+    @include subTitleFont;
+    position: relative;
+    margin: 0 0 50px 0;
+    &:before{
+      content: 'H2';
+      position: absolute;
+      left: -56px;
+      top: 0;
+      color: $default-color25;
+      font-size: 19px;
+      font-family: $mainFont;
+      font-weight: normal;
+    }
+  }
+  &__h3{
+    @include labelFont;
+    position: relative;
+    margin: 0 0 47px 0;
+    &:before{
+      content: 'H3';
+      position: absolute;
+      left: -47px;
+      top: 0;
+      color: $default-color25;
+      font-size: 12px;
+      font-family: $mainFont;
+      font-weight: normal;
+    }
+  }
+  &__p{
+    @include mainFont;
+    position: relative;
+    padding: 0 20px 0 0;
+    &:before{
+      content: 'Body';
+      position: absolute;
+      left: -66px;
+      top: 0;
+      color: $default-color25;
+      font-size: 14px;
+      font-family: $mainFont;
+      font-weight: normal;
+    }
+  }
+}

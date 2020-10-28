@@ -1,0 +1,49 @@
+.color{
+  width: 270px;
+  display: flex;
+  &__box{
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+    margin: 0 40px 0 0;
+  }
+  &__info{
+    padding: 9px 0 0 0;
+  }
+  &__title{
+    @include subTitleFont;
+    padding: 0 0 5px 0;
+  }
+  &__description{
+    @include subTitleFont;
+    font-weight: normal;
+  }
+}
+
+.default-color{
+  background-color: $default-color;
+}
+
+.default-color75{
+  background-color: $default-color75;
+}
+
+.default-color50{
+  background-color: $default-color50;
+}
+
+.default-color25{
+  background-color: $default-color25;
+}
+
+.default-color5{
+  background-color: $default-color5;
+}
+
+.primary-color{
+  background-color: $primary-color;
+}
+
+.success-color{
+  background-color: $success-color;
+}

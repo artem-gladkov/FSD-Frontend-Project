@@ -1,0 +1,52 @@
+include ../assets/pug/blocks.pug
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Colors_Type
+  body.colors-type
+    .container
+      .flex
+        .colors
+          +color({
+            title: 'Dark Shade 100%',
+            description: '#1F2041',
+            color: 'default-color'
+          })
+          +color({
+            title: 'Dark Shade 75%',
+            description: '#1F2041',
+            color: 'default-color75'
+          }) 
+          +color({
+            title: 'Dark Shade 50%',
+            description: '#1F2041',
+            color: 'default-color50'
+          }) 
+          +color({
+            title: 'Dark Shade 25%',
+            description: '#1F2041',
+            color: 'default-color25'
+          }) 
+          +color({
+            title: 'Dark Shade 5%',
+            description: '#1F2041',
+            color: 'default-color5'
+          }) 
+          +color({
+            title: 'Purple',
+            description: '#BC9CFF',
+            color: 'primary-color'
+          }) 
+          +color({
+            title: 'Green',
+            description: '#6FCF97',
+            color: 'success-color'
+          })
+        .paragraphs
+          h1.colors-type__h1 This one is the sub-section or widget title
+          h2.colors-type__h2 Next one is the item title inside widgets
+          h3.colors-type__h3 This is a label or CTA text
+          p.colors-type__p This is the body text which is used for most of the design, like paragraphs, lists, etc.
