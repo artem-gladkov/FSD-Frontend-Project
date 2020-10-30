@@ -1,23 +1,32 @@
 mixin dropdown(options={})   
-  - const {leftLabel = 'Default', rightLabel = '', items = ['default'], placeholder = '', buttons = false, classes = '', show = false} = options
+  - 
+    const {
+      leftLabel = 'Default', 
+      rightLabel = '', 
+      items = ['default'], 
+      placeholder = '', 
+      buttons = false, 
+      classes = '', 
+      show = false
+    } = options
   .dropdown(class=classes)
     .dropdown__label
       p.dropdown__label-left=leftLabel
       p.dropdown__label-right=rightLabel
     if(show)
-      .dropdown__btn.show
-        span.dropdown__btn-value=placeholder
+      .dropdown__input.show
+        span.dropdown__input-placeholder=placeholder
     else
-      .dropdown__btn
-        span.dropdown__btn-value=placeholder
+      .dropdown__input
+        span.dropdown__input-placeholder=placeholder
     .dropdown__menu(class=classes)
       each item in items
         .dropdown__item
           .dropdown__item-text=item
           .dropdown__item-count
-            .dropdown__item-btn-reduce.dropdown__item-btn -
+            .dropdown__item-btn-reduce.dropdown__item-btn#dropdown__item-btn-reduce -
             .dropdown__item-num 0
-            .dropdown__item-btn-add.dropdown__item-btn +
+            .dropdown__item-btn-add.dropdown__item-btn#dropdown__item-btn-add +
       if(buttons)
         .dropdown__menu-btn
           p.dropdown__menu-btn-clear Очистить

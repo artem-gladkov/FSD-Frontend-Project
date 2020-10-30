@@ -2,7 +2,7 @@
   padding: 144px 0;
   background-color: #fff;
   .row-one{
-    margin: 0 0 96px 0;
+    margin: 0 0 101px 0;
     .column-one{
       .inputs{
         & .input:nth-child(1){
@@ -20,7 +20,7 @@
         margin: 0 0 36px 0;
       }
 
-      .datepicker:nth-child(3){
+      .datepicker-input:nth-child(3){
         margin: 0 0 42px 0;
       }
     }
@@ -78,7 +78,7 @@
     .column-three{
       margin: 0 1px 0 0;
       .range{
-        margin: 0 0 40px 0;
+        margin: 0 0 26px 0;
       }
       .buttons{
         margin: 0 0 36px 0;
@@ -113,16 +113,16 @@
   .row-two{
     min-height: 601px;
     height: 100%;
-    margin: 0 0 91px 0;
+    margin: 0 0 85px 0;
     .column-one{
       .dropdown:first-child{
-        margin: 0 0 16px 0;
+        margin: 0 0 21px 0;
       }
       .dropdown:nth-child(2){
-        margin: 0 0 168px 0;
+        margin: 0 0 174px 0;
       }
       .expandable-checkbox:nth-child(3){
-        margin: 0 0 40px 0;
+        margin: 0 0 50px 0;
       }
       .expandable-checkbox:nth-child(4){
         margin: 0;

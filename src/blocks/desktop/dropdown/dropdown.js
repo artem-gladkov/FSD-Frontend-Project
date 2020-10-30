@@ -1,10 +1,20 @@
-let dropdowns = $('.dropdown')
+let dropdowns = document.querySelectorAll('.dropdown')
     
-$.each(dropdowns, function(index, dropdown){
-  let btnShow = $(dropdown).find('.dropdown__btn')
-
-  btnShow.on('click', function(){
-    btnShow.toggleClass('show')
+dropdowns.forEach(dropdown => {
+  let input = dropdown.querySelector('.dropdown__input'),
+      btnApply = dropdown.querySelector('.dropdown__menu-btn-apply')
+      
+  // Открытие дропдауна    
+  input.addEventListener('click', () => {
+    input.classList.toggle('show')
   })
+
+  // Закрытие по кнопке "применить" 
+  if(btnApply) {
+    btnApply.addEventListener('click', () => {
+      input.classList.toggle('show')
+    })
+  }
+  
 })
 

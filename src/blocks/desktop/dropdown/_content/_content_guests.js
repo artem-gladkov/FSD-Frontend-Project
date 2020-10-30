@@ -1,67 +1,126 @@
-let dropdownsGuests = $('.dropdown.dropdown_content_guests')
+let dropdownsGuests = document.querySelectorAll('.dropdown.dropdown_content_guests')
 
-$.each(dropdownsGuests, function(index, dropdown){
-  let btnShow = $(dropdown).find('.dropdown__btn'),
-      items = $(dropdown).find('.dropdown__item'),
-      placeholder = $(dropdown).find('.dropdown__btn-value'),
-      btnClear = $(dropdown).find('.dropdown__menu-btn-clear'),
-      btnApply = $(dropdown).find('.dropdown__menu-btn-apply'),
-      dropdownCount = 0
+dropdownsGuests.forEach(dropdown => {
+  let inputValue = dropdown.querySelector('.dropdown__input-placeholder'),
+      items = dropdown.querySelectorAll('.dropdown__item'),
+      guestsCount = 0,
+      babyCount = 0,
+      commonCount = 0,
+      values = [],
+      btnClear = dropdown.querySelector('.dropdown__menu-btn-clear')
   
-  btnClear.on('click', function(){
-    dropdownCount = 0
-    $.each(items, (i, e) => {
-      $(e).find('.dropdown__item-num').text(0)
-      placeholder.text('Сколько гостей')
-    })
-  })  
-  
-  btnApply.on('click', function(){
-    btnShow.toggleClass('show')
-  })  
-  
-    
-    
-  
-  $.each(items, function(index, item){
-    let itemCount = $(item).find('.dropdown__item-num'),
-        itemCountValue = +$(item).find('.dropdown__item-num').text(),
-        btnAdd = $(item).find('.dropdown__item-btn-add'),
-        btnReduce = $(item).find('.dropdown__item-btn-reduce')
-    
-    btnAdd.on('click', function(){
-      itemCountValue = +$(item).find('.dropdown__item-num').text()
-      dropdownCount++
-      itemCount.text(++itemCountValue)
-      if(dropdownCount === 1) {
-        placeholder.text(dropdownCount + ' гость')
-      } else if (dropdownCount > 1 && dropdownCount < 5){
-        placeholder.text(dropdownCount + ' гостя')
-      } else {
-        placeholder.text(dropdownCount + ' гостей')
-      }
+  if(btnClear){
+    btnClear.addEventListener('click', () => {
+      guestsCount = 0
+      babyCount = 0
+      commonCount = 0
+      values = []
+
+      inputValue.innerText = 'Сколько гостей'
       
+      items.forEach(item => {
+        item.querySelector('.dropdown__item-num').innerText = 0
+      })
     })
+  }
+ 
+  items.forEach(item => {
+    item.addEventListener('click', e => {
+      e.stopPropagation()
 
-    btnReduce.on('click', function(){
-      itemCountValue = +$(item).find('.dropdown__item-num').text()
-      if(itemCountValue >= 1){
-        dropdownCount--
-        itemCount.text(--itemCountValue)
-      }
+      let itemCount = item.querySelector('.dropdown__item-num'),
+          itemText = item.querySelector('.dropdown__item-text').innerHTML
 
-      if(dropdownCount === 1) {
-        placeholder.text(dropdownCount + ' гость')
-      } else if (dropdownCount > 1 && dropdownCount < 5){
-        placeholder.text(dropdownCount + ' гостя')
-      } else {
-        placeholder.text(dropdownCount + ' гостей')
-      }
+      switch (e.target.id) {
+        case 'dropdown__item-btn-reduce':
+          if(itemCount.innerText <= 0) break // Если счетчик равен 0, то ничего не делать
 
-      if (dropdownCount == 0){
-        placeholder.text('Сколько гостей')
+          --itemCount.innerText 
+
+          if(itemText.toLowerCase() == 'младенцы' && babyCount > 0){ 
+            babyCount--
+            commonCount--
+
+            if (commonCount === 0) {
+              inputValue.innerText = 'Сколько гостей'
+              values = []
+              break
+            }
+            
+            if (babyCount === 0){
+              values[1] = ''
+            } else if (babyCount === 1){
+              values[1] = `${babyCount} младенец`  // Определение падежа
+            } else if (babyCount > 1 && babyCount < 5){
+              values[1] = `${babyCount} младенца`
+            } else {
+              values[1] = `${babyCount} младенцев`
+            }
+          } else if (itemText.toLowerCase() !== 'младенцы' && guestsCount > 0){
+            guestsCount--
+            commonCount--
+
+            if (commonCount === 0) {
+              inputValue.innerText = 'Сколько гостей'
+              values = []
+              break
+            }
+              
+            if (guestsCount === 0){
+              values[0] = ''
+            } else if (guestsCount === 1){
+              values[0] = `${guestsCount} гость`  // Определение падежа
+            } else if (guestsCount > 1 && guestsCount < 5){
+              values[0] = `${guestsCount} гостя`
+            } else {
+              values[0] = `${guestsCount} гостей`
+            }
+          }
+          
+          inputValue.innerText = values.filter(item => item != '').join(', ')
+
+          break;
+        case  'dropdown__item-btn-add':
+          ++itemCount.innerText
+          if(itemText.toLowerCase() == 'младенцы'){
+
+            babyCount++
+            commonCount++
+
+            if (commonCount === 1) inputValue.innerText = '' // При первом нажатии placeholder стирается
+
+            if (babyCount === 1){
+              values[1] = `${babyCount} младенец`  // Определение падежа
+            } else if (babyCount > 1 && babyCount < 5){
+              values[1] = `${babyCount} младенца`
+            } else {
+              values[1] = `${babyCount} младенцев`
+            }
+
+            
+
+            
+          } else {
+            guestsCount++
+            commonCount++
+
+            if (commonCount === 1) inputValue.innerText = ''  // При первом нажатии placeholder стирается
+
+            if (guestsCount === 1){
+              values[0] = `${guestsCount} гость`  // Определение падежа
+            } else if (guestsCount > 1 && guestsCount < 5){
+              values[0] = `${guestsCount} гостя`
+            } else {
+              values[0] = `${guestsCount} гостей`
+            }
+
+          }
+
+
+          inputValue.innerText = values.filter(item => item != '').join(', ')
+          
+          break
       }
     })
   })
-})
-
+});
