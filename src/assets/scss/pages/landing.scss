@@ -1,13 +1,11 @@
 .landing{
   .main{
     max-height: 830px;
-    height: 100%;
-    background-image: url(../img/landing_bg.jpg);
+    height: 100vh;
+    background-image: url(../img/jpg/landing_bg.jpg);
     background-repeat: no-repeat;
-    background-position-y: -71px;
-    background-size: cover;
-  }
-  .card-selection{
-    margin: 68px 0 0 0;
+    background-position: center -71px;
+    padding: 69px 0 0 0;
+    position: relative;
   }
 }

@@ -236,6 +236,7 @@
     Datepicker
    ------------------------------------------------- */
 .datepickers-container {
+  width: 320px;
   position: absolute;
   left: 0;
   top: 0; }
@@ -252,8 +253,8 @@
   font-family: $mainFont;
   font-size: 14px;
   color: $default-color50;
-  width: 320px;
-  padding: 20px 19px;
+  width: 100%;
+  padding: 20px 19px 10px 19px;
   position: absolute;
   left: -100000px;
   opacity: 0;

@@ -6,15 +6,15 @@ block vars
     title = 'Room-details'
 
 block content
-  .room-details__preview
-    .room-details__preview-item.room-details__preview-item_big
-      img.room-details__preview-img(src="assets/img/room-details-img1.jpg", alt="")
-    .room-details__preview-item
-      img.room-details__preview-img(src="assets/img/room-details-img2.jpg", alt="")
-    .room-details__preview-item
-      img.room-details__preview-img(src="assets/img/room-details-img3.jpg", alt="")
-
+  
   main.room-details__main
+    .room-details__preview
+      .room-details__preview-item.room-details__preview-item_big
+        img.room-details__preview-img(src="assets/img/jpg/room-details-img1.jpg", alt="")
+      .room-details__preview-item
+        img.room-details__preview-img(src="assets/img/jpg/room-details-img2.jpg", alt="")
+      .room-details__preview-item
+        img.room-details__preview-img(src="assets/img/jpg/room-details-img3.jpg", alt="")
     .container.room-details__container
       .flex
         .room-details__content
@@ -23,21 +23,21 @@ block content
             +advantage({
               title: 'Комфорт',
               description: 'Шумопоглощающие стены',
-              src: 'assets/img/smiley.svg',
+              src: 'assets/img/svg/smiley.svg',
               alt: 'smiley',
               classes: ['room-details__advantage']
             })
             +advantage({
               title: 'Удобство',
               description: 'Окно в каждой из спален',
-              src: 'assets/img/city.svg',
+              src: 'assets/img/svg/city.svg',
               alt: 'city',
               classes: ['room-details__advantage']
             })
             +advantage({
               title: 'Уют',
               description: 'Номер оснащён камином',
-              src: 'assets/img/whatshot.svg',
+              src: 'assets/img/svg/whatshot.svg',
               alt: 'whatshot',
               classes: ['room-details__advantage']
             })
@@ -60,7 +60,7 @@ block content
               text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.',
               time: '5 дней назад', 
               likeCount: 12, 
-              src: 'assets/img/feedback_1.jpg',
+              src: 'assets/img/jpg/feedback_1.jpg',
               classes: ['room-details__comment']
             })
             +comment({
@@ -68,7 +68,7 @@ block content
               text: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент',
               time: 'Неделю назад', 
               likeCount: 2, 
-              src: 'assets/img/feedback_2.jpg',
+              src: 'assets/img/jpg/feedback_2.jpg',
               classes: ['room-details__comment']
             })
           +bullet-list({

@@ -15,7 +15,7 @@
     color: $default-color50;
     font-size: 12px;
     cursor: pointer;
-    &:first-child{
+    &.active{
       background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
       color: white;
     }
@@ -38,6 +38,13 @@
       opacity: 0.5;
       background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
       color: white;
+    }
+    .arrow{
+      position: unset;
+      border-color: white;
+      &:before{
+        background-color: #fff;
+      }
     }
   }
   &__text{

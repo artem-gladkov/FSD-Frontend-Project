@@ -2,6 +2,7 @@
   max-width: 320px;
   width: 100%;
   user-select: none;
+  position: relative;
   &__label{
     display: flex;
     width: 100%;
@@ -61,9 +62,9 @@
   }
   &__menu{
     position: absolute;
-    z-index: 2;
-    max-width: 320px;
+    z-index: 999;
     width: 100%;
+
     background-color: white;
     padding: 6px 5px 0 14px;
     border: 1px solid $default-color50;
@@ -89,6 +90,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0 0 7px 0;
+    white-space: nowrap;
     &-text{
       font-weight: bold;
       color: $default-color;

@@ -10,7 +10,7 @@ $.each(likes, (index, like) => {
     $(like).toggleClass('active')
 
     heart.attr('src', function(index, attr){
-      return attr == 'assets/img/heart__border.svg' ? 'assets/img/heart.svg' : 'assets/img/heart__border.svg'
+      return attr == 'assets/img/svg/heart__border.svg' ? 'assets/img/svg/heart.svg' : 'assets/img/svg/heart__border.svg'
     })
 
     if(!isAdd) {

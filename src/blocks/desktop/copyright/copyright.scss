@@ -20,6 +20,7 @@
     justify-content: space-between;
     align-items: center;
     width: 112px;
+    cursor: pointer;
   }
   &__twitter,
   &__facebook,
@@ -46,6 +47,7 @@
     }
     &__text{
       margin: 0 0 25px 0;
+      text-align: center;
     }
   }
 }

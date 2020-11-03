@@ -43,7 +43,7 @@ dropdownsAmenities.forEach(dropdown => {
           }
 
           if (itemText.toLowerCase() === 'спальни'){
-            if(itemNum.innerText === '0'){
+            if(itemNum.innerText == '0'){
               values[index] = ''
             } else if(itemNum.innerText === 1){
               values[index] = `${itemNum.innerText} спальня`
@@ -53,7 +53,7 @@ dropdownsAmenities.forEach(dropdown => {
               values[index] = `${itemNum.innerText} спален`
             }
           } else if  (itemText.toLowerCase() === 'кровати'){
-              if(itemNum.innerText === '0'){
+              if(itemNum.innerText == '0'){
                 values[index] = ''
               } else if(itemNum.innerText === 1){
                 values[index] = `${itemNum.innerText} кровать`
@@ -63,7 +63,7 @@ dropdownsAmenities.forEach(dropdown => {
                 values[index] = `${itemNum.innerText} кроватей`
               }
           } else if  (itemText.toLowerCase() === 'ванные комнаты'){
-              if(itemNum.innerText === '0'){
+              if(itemNum.innerText == '0'){
                 values[index] = ''
               } else if(itemNum.innerText === 1){
                 values[index] = `${itemNum.innerText} ванная комната`
@@ -83,7 +83,8 @@ dropdownsAmenities.forEach(dropdown => {
           itemNum.innerText = itemNum.innerText 
 
           if (itemText.toLowerCase() === 'спальни'){
-            if(itemNum.innerText === 1){
+            if(itemNum.innerText == 1){
+              console.log('wirk');
               values[index] = `${itemNum.innerText} спальня`
             } else if(itemNum.innerText > 1 && itemNum.innerText < 5){
               values[index] = `${itemNum.innerText} спальни`
@@ -91,7 +92,7 @@ dropdownsAmenities.forEach(dropdown => {
               values[index] = `${itemNum.innerText} спален`
             }
           } else if  (itemText.toLowerCase() === 'кровати'){
-              if(itemNum.innerText === 1){
+              if(itemNum.innerText == 1){
                 values[index] = `${itemNum.innerText} кровать`
               } else if(itemNum.innerText > 1 && itemNum.innerText < 5){
                 values[index] = `${itemNum.innerText} кровати`
@@ -99,7 +100,7 @@ dropdownsAmenities.forEach(dropdown => {
                 values[index] = `${itemNum.innerText} кроватей`
               }
           } else if  (itemText.toLowerCase() === 'ванные комнаты'){
-              if(itemNum.innerText === 1){
+              if(itemNum.innerText == 1){
                 values[index] = `${itemNum.innerText} ванная комната`
               } else if(itemNum.innerText > 1 && itemNum.innerText < 5){
                 values[index] = `${itemNum.innerText} ванные комнаты`
