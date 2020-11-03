@@ -9,7 +9,7 @@ html(lang="zxx")
   body.cards
     .main-content
       .container
-        .flex
+        .flex.cards-wrap
           .column380
             +card-selection()
             +card-registration()
@@ -17,7 +17,7 @@ html(lang="zxx")
             +card-booking()
             +card-login()
           .column320 
-            .datepicker-here
+            .datepicker-here.cards-datepicker
             +card-room({
               src: [
                 "assets/img/rooms/room_888.jpg", 

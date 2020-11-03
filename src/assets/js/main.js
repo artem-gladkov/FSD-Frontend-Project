@@ -1,1 +1,3 @@
-import './blocks.js';
+import './blocks';
+import './pages/search-room';
+

@@ -7,15 +7,17 @@ block vars
 
 block content
   .container
+    #search-room__sidebar-btn Фильтр
+      .arrow
     .flex
-      aside.sidebar
-        +datepicker({
-          label: 'даты пребывания в отеле',
-          value: '19 авг - 23 авг',
-          inputClasses: ['datepicker_type_filter'],
-          classes: ['datepicker-input_size_medium']
-        })
-        .grid-inner 
+      aside.sidebar#search-room__sidebar
+        .sidebar__grid
+          +datepicker({
+            label: 'даты пребывания в отеле',
+            value: '19 авг - 23 авг',
+            inputClasses: ['datepicker_type_filter'],
+            classes: ['datepicker-input_size_medium sidebar__datepicker']
+          })
           +dropdown({
             leftLabel: 'Гости', 
             items: ['взрослые','дети', 'младенцы'], 

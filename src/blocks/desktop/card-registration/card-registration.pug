@@ -17,7 +17,8 @@ mixin card-registration()
       +radio('Мужчина', 'gender')
       +radio('Женщина', 'gender')
     +datepicker({
-      label: 'Дата рождения'
+      label: 'Дата рождения',
+      classes: ['card-registration__birthday']
     })
     +input({
       leftLabel: 'Данные для входа в сервис', 

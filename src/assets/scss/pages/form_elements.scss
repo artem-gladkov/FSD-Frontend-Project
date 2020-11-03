@@ -1,6 +1,9 @@
 .form_elements{
   padding: 144px 0;
   background-color: #fff;
+  .row{
+    flex-wrap: wrap;
+  }
   .row-one{
     margin: 0 0 101px 0;
     .column-one{
@@ -150,3 +153,39 @@
   }
 }
 
+@media (max-width: 1080px){
+  .form_elements{
+    .row-one{
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 0 0 40px;
+      .column-one,
+      .column-two,
+      .column-three{
+        margin: 0 0 40px;
+      }
+    }
+    .row-two{
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 0 0 40px;
+      .column-one,
+      .column-two,
+      .column-three{
+        margin: 0 0 40px;
+      }
+      .dropdown{
+        margin: 0 0 40px !important;
+      }
+    }
+    .row-three{
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .column-one,
+      .column-two,
+      .column-three{
+        margin: 0 0 40px;
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
-let headers = document.querySelectorAll('.header')
+let headers = document.querySelectorAll('.header'),
+    body = document.querySelector('body')
 
 headers.forEach(header => {
   let headerNav = header.querySelector('.header__nav'),
@@ -7,5 +8,7 @@ headers.forEach(header => {
   headerBurger.addEventListener('click', () => {
     headerNav.classList.toggle('show')
     headerBurger.classList.toggle('show')
+    body.classList.toggle('lock')
+    
   })
 })

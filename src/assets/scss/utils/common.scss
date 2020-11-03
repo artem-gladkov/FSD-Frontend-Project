@@ -8,8 +8,13 @@ body{
   flex-direction: column;
 }
 
+body.lock{
+  overflow: hidden;
+}
+
 .main-content{
   flex: 1 0 auto;
+  position: relative;
 }
 
 .container{
@@ -32,15 +37,13 @@ body{
 }
 
 .column320{
-  max-width: 320px;
-  width: 100%;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
 }
 
 .column640{
-  max-width: 640px;
-  width: 100%;
+  min-width: 640px;
   display: flex;
   flex-direction: column;
 }
