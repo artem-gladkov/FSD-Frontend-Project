@@ -6,3 +6,12 @@
     width: 47%;
   }
 }
+
+@media (max-width: 479px){
+  .datepicker-input_type_double{
+    flex-direction: column;
+    .datepicker-input__field{
+      width: 100%;
+    }
+  }
+}

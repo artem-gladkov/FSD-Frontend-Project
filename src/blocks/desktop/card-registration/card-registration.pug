@@ -1,5 +1,9 @@
-mixin card-registration()
-  .card.card-registration
+mixin card-registration(options={})
+  - 
+    const {
+      classes = []
+    } = options
+  .card.card-registration(class=classes)
     h2.heading.card-registration__heading Регистрация аккаунта
     +input({
       placeholder: 'Имя',

@@ -1,6 +1,8 @@
 .advantage{
   display: flex;
-  min-width: 280px;
+  min-width: 260px;
+  max-width: 280px;
+  width: 100%;
   height: min-content;
   border-bottom: 1px solid rgba(31, 32, 65, 0.1);
   padding: 20px 0 20px 0;

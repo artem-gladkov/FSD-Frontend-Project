@@ -9,11 +9,17 @@ mixin comment(options={})
       classes = [''] 
     } = options
   .comment(class=classes)
-    .comment__left
+    .comment__header
       .comment__img
         img(src=src, alt=author)
-      +like(likeCount)
-    .comment__right
-      h6.comment__author=author
-      p.comment__time=time
+      .comment__info
+        h6.comment__author=author
+        p.comment__time=time
+    .comment__main
+      +like({
+        count: likeCount,
+        classes: ['comment__like']
+      })
       p.comment__text=text
+
+            

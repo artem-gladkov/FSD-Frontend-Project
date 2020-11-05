@@ -126,3 +126,11 @@
     margin: 0 0 6px 0;
   }
 }
+
+@media (max-width: 479px){
+  .card-booking{
+    &__top{
+      flex-direction: column;
+    }
+  }
+}

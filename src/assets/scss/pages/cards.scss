@@ -23,7 +23,7 @@
   }
 }
 
-@media (max-width: 1180px){
+@media (max-width: 1199px){
   .cards{
     &-wrap{
       flex-direction: column;
@@ -31,6 +31,14 @@
     }
     .column380{
       margin: 0 0 40px 0;
+    }
+  }
+}
+
+@media (max-width: 479px){
+  .cards{
+    .column320{
+      align-items: center;
     }
   }
 }

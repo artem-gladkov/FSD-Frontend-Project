@@ -1,11 +1,28 @@
 .landing{
-  .main{
+  &__main{
     max-height: 830px;
     height: 100vh;
     background-image: url(../img/jpg/landing_bg.jpg);
     background-repeat: no-repeat;
-    background-position: center -71px;
+    background-position: center;
+    @media (min-width: 1450px) {
+      background-position: center -71px;
+    }
+    background-size: cover;
     padding: 69px 0 0 0;
     position: relative;
   }
+  &__container{
+    position: relative;
+    height: 100%;
+  }
+  &__inscription{
+    position: absolute;
+    text-align: right;
+    max-width: 300px;
+    right: 14px;
+    bottom: 22px;
+  }
 }
+
+

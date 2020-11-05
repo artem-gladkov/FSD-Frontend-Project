@@ -1,5 +1,6 @@
 .statistics{
   max-width: 311px;
+  width: 100%;
   &__heading{
     color: $default-color;
     font-weight: bold;
@@ -45,6 +46,8 @@
     margin: 26px 0 0 0;
   }
   &__item{
+    white-space: nowrap;
+    width: min-content;
     &::before{
       content: '';
       display: inline-block;
@@ -63,5 +66,19 @@
   }
   &__item-three::before{
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  }
+}
+
+@media (max-width: 479px){
+  .statistics{
+    max-width: 320px;
+    width: 100%;
+    &__heading{
+      text-align: center;
+    }
+    &__body{
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }

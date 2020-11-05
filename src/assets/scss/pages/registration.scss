@@ -4,11 +4,15 @@
     background-image: url(../img/jpg/background_1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center -71px;
   }
   &__container{
     display: flex;
     justify-content: center;
     height: 100%;
-    padding: 20px 0;
+    padding: 18px 0;
+  }
+  &__card-registration{
+    margin: 0 0 0 5px;
   }
 }
