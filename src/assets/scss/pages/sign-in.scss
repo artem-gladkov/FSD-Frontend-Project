@@ -1,14 +1,15 @@
 .sign-in{
   &__main{
     height: 100%;
-    background-image: url(../img/jpg/background_1.jpg);
+    background-image: url(../img/jpg/background_2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: bottom center;
   }
   &__container{
     display: flex;
     justify-content: center;
     height: 100%;
-    padding: 172px 0;
+    padding: 172px 20px;
   }
 }

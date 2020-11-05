@@ -192,7 +192,7 @@
 }
 
 .datepicker--cell-day {
-  width: 40px; 
+  width: 14.28571%;
   height: 39.5px;}
 
 .datepicker--cells-months {
@@ -236,13 +236,17 @@
     Datepicker
    ------------------------------------------------- */
 .datepickers-container {
-  width: 320px;
   position: absolute;
   left: 0;
-  top: 0; }
+  top: 0; 
+}
   @media print {
     .datepickers-container {
-      display: none; } }
+      display: none; 
+    } 
+  }
+ 
+  
 
 .datepicker {
   box-sizing: border-box;
@@ -253,7 +257,7 @@
   font-family: $mainFont;
   font-size: 14px;
   color: $default-color50;
-  width: 100%;
+  width: 320px;
   padding: 20px 19px 10px 19px;
   position: absolute;
   left: -100000px;
@@ -261,7 +265,18 @@
   transition: opacity 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
   transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s;
   transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
-  z-index: 100; }
+  z-index: 100; 
+}
+@media (max-width: 479px){
+  .datepicker{
+    width: 250px;
+    padding: 20px 10px 10px 0;
+  }
+  .datepicker--cell{
+    width: 14.28571%;
+    height: 32px;
+  }
+}
   .datepicker.-from-top- {
     -webkit-transform: translateY(-8px);
             transform: translateY(-8px); }
