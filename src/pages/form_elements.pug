@@ -9,7 +9,7 @@ html(lang="zxx")
   body.form_elements
     .main-content
       .container
-        .row.row-one
+        .row.row-one.row_space-between
           .column320.column-one
             .inputs
               +input({
@@ -115,7 +115,7 @@ html(lang="zxx")
             .pagination-block
               h6.title Pagination
               +pagination
-        .row.row-two
+        .row.row-two.row_space-between
           .column320.column-one
             +dropdown({
               leftLabel: 'Dropdown', 
@@ -187,7 +187,7 @@ html(lang="zxx")
                 'Время прибытия — после 13:00, а выезд до 12:00'
               ]
             })
-        .row.row-three
+        .row.row-three.row_space-between
           .advantage-list
             +advantage({
               title: 'Комфорт', 

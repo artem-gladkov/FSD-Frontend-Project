@@ -1,10 +1,16 @@
 mixin button(options={}) 
-  - const {text = '', classes = '', arrow = false} = options
+  - 
+    const {
+      text = '', 
+      classes = '', 
+      arrow = false, 
+      href = '#'
+    } = options
   if (arrow)
-    .button.button_with-arrow(class=classes)
+    a.button.button_with-arrow(class=classes href=href)
       p.button__text=text
       .arrow
   else
-    .button(class=classes)
+    a.button(class=classes href=href)
       p.button__text=text
 

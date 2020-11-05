@@ -23,8 +23,7 @@ module.exports = {
   },
   output: {
     filename: "assets/js/[name].js",
-    path: PATHS.dist,
-    publicPath: '/'
+    path: PATHS.dist
   },
   module: {
     rules: [{
@@ -40,7 +39,7 @@ module.exports = {
         },
         exclude: '/node_modules/',
       }, {
-        // css
+      // CSS
         test: /\.css$/,
         use: [
           'style-loader',
@@ -65,7 +64,10 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
-            options: { sourceMap: true }
+            options: { 
+              sourceMap: true,
+              url: false
+            }
           }, {
             loader: 'postcss-loader',
             options: {sourceMap: true, config: { path: `./postcss.config.js` }
@@ -80,14 +82,15 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
         options: {
-          name: 'assets/img/[name].[ext]'
+          name: 'assets/img/[ext]/[name].[ext]'
         }
-      }, {
+      }
+      , {
       //FONTS
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'file-loader',
         options: {
-          name: 'assets/fonts/[name].[ext]'
+          name: '[name].[ext]'
         }
       }
     ]
@@ -99,6 +102,7 @@ module.exports = {
     new CopyWebpackPlugin ({
       patterns: [
         {from: `${PATHS.src}/assets/img`, to: `${PATHS.assets}img`},
+        {from: `${PATHS.src}/assets/fonts`, to: `${PATHS.assets}fonts`},
         {from: `${PATHS.src}/static`, to: ''},
       ]
     }),

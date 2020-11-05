@@ -35,6 +35,9 @@ body.lock{
   display: flex;
   justify-content: flex-start;
   width: 100%;
+  &_space-between{
+    justify-content: space-between;
+  }
 }
 
 .column320{

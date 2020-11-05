@@ -1,7 +1,57 @@
+include ../assets/pug/blocks.pug
+
 <!DOCTYPE html>
 html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Document
+    title FSD
   body
+    .container.index__container
+      h6.heading UI KIT
+      +button({
+        text: 'Цвета и заголовки', 
+        classes: ['button_size_big'],
+        href: 'colors_type.html'
+      })
+      +button({
+        text: 'Блоки',
+        classes: ['button_size_big'],
+        href: 'form_elements.html'
+      })
+      +button({
+        text: 'Карточки',
+        classes: ['button_size_big'],
+        href: 'cards.html'
+      })
+      +button({
+        text: 'Header and Footer',
+        classes: ['button_size_big'],
+        href: 'headers_footers.html'
+      })
+      h6.heading Website
+      +button({
+        text: 'Лэндинг',
+        classes: ['button_size_big'],
+        href: 'landing-page.html'
+      })
+      +button({
+        text: 'Страница выбора комнаты',
+        classes: ['button_size_big'],
+        href: 'search-room.html'
+      })
+      +button({
+        text: 'Страница детaлей комнаты',
+        classes: ['button_size_big'],
+        href: 'room-details.html'
+      })
+      +button({
+        text: 'Страница регистрации',
+        classes: ['button_size_big'],
+        href: 'registration.html'
+      })
+      +button({
+        text: 'Страница входа',
+        classes: ['button_size_big'],
+        href: 'sign-in.html'
+      })
