@@ -1,35 +1,35 @@
 @font-face {
     font-family: 'Quicksand';
-    src: url('/assets/fonts/Quicksand/Quicksand-Bold.woff2') format('woff2'),
-        url('/assets/fonts/Quicksand/Quicksand-Bold.woff') format('woff'),
-        url('/assets/fonts/Quicksand/Quicksand-Bold.ttf') format('truetype');
+    src: url('../fonts/Quicksand/Quicksand-Bold.woff2') format('woff2'),
+        url('../fonts/Quicksand/Quicksand-Bold.woff') format('woff'),
+        url('../fonts/Quicksand/Quicksand-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Quicksand';
-    src: url('/assets/fonts/Quicksand/Quicksand-Regular.woff2') format('woff2'),
-        url('/assets/fonts/Quicksand/Quicksand-Regular.woff') format('woff'),
-        url('/assets/fonts/Quicksand/Quicksand-Regular.ttf') format('truetype');
+    src: url('../fonts/Quicksand/Quicksand-Regular.woff2') format('woff2'),
+        url('../fonts/Quicksand/Quicksand-Regular.woff') format('woff'),
+        url('../fonts/Quicksand/Quicksand-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('/assets/fonts/Montserrat/Montserrat-Bold.woff2') format('woff2'),
-        url('/assets/fonts/Montserrat/Montserrat-Bold.woff') format('woff'),
-        url('/assets/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+    src: url('../fonts/Montserrat/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/Montserrat/Montserrat-Bold.woff') format('woff'),
+        url('../fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('/assets/fonts/Montserrat/Montserrat-Regular.woff2') format('woff2'),
-        url('/assets/fonts/Montserrat/Montserrat-Regular.woff') format('woff'),
-        url('/assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+    src: url('../fonts/Montserrat/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat/Montserrat-Regular.woff') format('woff'),
+        url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
